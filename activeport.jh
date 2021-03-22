@@ -1,0 +1,800 @@
+
+application {
+  config {
+    baseName ActivePort,
+    applicationType monolith,
+    packageName com.activeport.web,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+    clientFramework react
+  }
+  entities *
+}
+
+entity Tenant {
+	name String
+    description String
+    tenantId String
+    disableAccess Boolean
+    ilmDays Integer /* defualt 90 */
+    slmDays Instant /* defualt 365 */
+}
+
+
+entity UserRole {
+	name String
+	priority Integer
+	description String
+	
+}
+
+entity UserProfile {
+	name String
+	description String
+	
+}
+
+
+entity Authority {
+	name String
+}
+
+/* END GW */
+
+
+entity CentralSwitch{
+    name String 
+    hostId String 
+    description String 
+    serialNumber String 
+    ipAddress String 
+  	companyName String 
+  	hostName String 
+  	configBackup Boolean   
+	poolVlanStart Integer 
+	poolVlanEnd Integer 
+ 	endpoint String 
+ 	restUsername String  
+ 	restPassword String 
+   	restEnabled Boolean 
+	autoRollback Boolean 
+	feign Boolean
+	    
+}
+
+entity Organization {
+    name String 
+    hostId String 
+    description String
+    billing Boolean
+    timeZone String
+}
+
+
+entity ItemCode {
+    name String 
+    code String 
+    codeRate String
+    codeActivation String
+    description String
+    localPriceRate Float
+    localPriceMontlhy Float
+    localPriceActivation Float
+    codeUpLift String
+    upLift Float
+    useUpLift Boolean
+    useLocalPrice Boolean
+}
+
+
+
+entity BillingSystem {
+	
+    name String required minlength(3) maxlength(30)  
+    description String
+    api BillingTypeEnum required   
+    stage String    
+    username String   
+    secret String    
+    privateKeyCert String    
+    privateKeyPassword String    
+    billingUid String
+    startBilling ZonedDateTime
+    currencyCode String
+}
+
+
+
+entity CircuitVlan{
+    zone String
+    serviceKey String
+    vlanId Integer
+    rd String    
+	serviceId Long   
+    tenantName String 
+   	childServiceId Long  
+   	childNtuId Long  
+    realmIp String 
+    internetType InternetTypeEnum
+    type ConnectTypeEnum 
+}
+
+
+entity JunoCommandLog {
+    ntuId Long
+    switchId Long   
+    serviceId Long    
+    vxcId Long 
+    deviceUrl String 
+    uuid String 
+    command String 
+    cmdResponse String 
+    executedDate ZonedDateTime    
+    eventType EventTypeEnum   
+    user String  
+    deviceName String 
+    targetType DeviceTargetTypeEnum  
+    hasErrors Boolean
+}
+
+entity MarketPlace{
+    companyUid String   
+    companyName String    
+    partnerUid String
+    accountId String   
+    title String    
+    locationId Integer    
+    speed Integer    
+    rank Integer    
+    bandwidth Integer 
+    locationName String     
+    locationMetro String 
+    portId Integer
+    /*extends UserService */
+    type ConnectTypeEnum 
+    name String 
+    description String 
+    serviceKey String 
+    rateLimit Integer 
+    price String 
+    uuid String 
+    productUid String
+    reTaggedVlanId Integer 
+    provisioningStatus ProvisioningStatusEnum 
+    vlanIdA Integer 
+    vlanIdB Integer 
+    vlanIdS Integer 
+    ntuId Long 
+    userIp String 
+    firewallPrice String 
+    firewallStatus FirewallStatusEnum 
+    state ServiceStateEnum 
+    bEndProductUid String 
+	partnerType PartnerTypeEnum 
+	circuitType CircuitTypeEnum 
+    userSubnet String 
+	myGw String 
+    activePortGw String
+	awsAuthKey String 
+	awsIp String 
+	asn Integer 
+    peerAsn Integer 
+	vxcType VXCTypeEnum
+     
+}
+
+
+entity NotificationEvent {
+    ntuName String 
+    ntuId Long 
+    status EventStatusEnum 
+    type EventTypeEnum 
+    message String 
+    serviceName String 
+    serviceId Long 
+    vxcId Long 
+    uuid String 
+    user String
+    errorMessage TextBlob
+}
+
+entity ServiceCommand {
+    name String 
+    command TextBlob
+    onEvent OnEventTypeEnum
+    onService ServiceTypeEnum
+    deviceType NtuSerieEnum
+    enabled Boolean
+    circuitType FilterCommandTypeEnum
+    tag String
+    osType OsTypeEnum
+    entryType EntityTypeEnum
+}
+
+
+entity Ntu {
+    name String   
+    hostId String  
+    description String
+    serialNumber String
+    ipAddress String
+	companyName String	
+	hostName String	
+	loIp String	
+	category String	
+	alarmEmailAddresses String 	
+	metricCollection Boolean	
+	securityCollection Boolean	
+	alarmCollection Boolean	
+	trendCollection Boolean	
+	syslogCollection Boolean
+	configBackup Boolean
+   	updateOneconfig Boolean
+    firmwareVersion String  
+ 	runningConfig String   
+ 	configId String    
+ 	endpoint String
+ 	restUsername String
+ 	restPassword String    
+   	restEnabled Boolean    
+	autoRollback Boolean	
+    mode NtuModeEnum
+    timeZone String
+     minRate Integer
+     maxRate Integer
+     defaultRate Integer
+     enableBod Boolean
+      burstTime Integer required min(5) max(1000)
+      secondlinkPort String 
+}
+
+entity NtuConfig {
+	    serialNumber String
+	    name String
+	    firmwareVersion String
+	    ntuId Long
+}
+
+entity NtuPort {	 
+    name String
+    label String
+    description String
+    mac String
+    port Integer
+    portType PortTypeEnum
+    trunk Boolean
+    jumbo Boolean 
+    portSpeed String
+    internetPort Boolean
+    uplinkPort String 
+}
+
+entity NtuType {
+	model String
+    ethernetPorts Integer
+    sfpPorts Integer
+    pictureContentType String
+    description String
+    portServiceType PortServiceTypeEnum
+    osType OsTypeEnum
+    etherPrefix String
+    sfpPrefix String
+    startIndex Integer
+    portTemplate TextBlob
+    
+}
+
+entity ServiceType {
+	code String
+	name String
+    description String
+    
+}
+
+
+entity ConfigJob {
+    hostId String
+    status String
+    uuid String
+    message String
+    command TextBlob
+    executed ZonedDateTime
+    executedStatus String
+    executedMessage String
+    ntuId Long
+    eventType EventTypeEnum   
+    user String
+    errorMessage TextBlob 
+	callbackUrl String
+}
+
+entity RateChangeLog{
+    previuosRate Integer
+    rate Integer
+}
+
+entity VntuDownlinkPort{
+	name String
+	uid String
+	description String
+	assignedOrgName String
+	assignedTenantName String
+	assignedOrgId String
+	assignedTenantId String
+	assignedVntuId Long
+	assignedVntuName String
+}
+
+entity Partner {
+    name String required minlength(3) maxlength(30)
+    email String
+    description String
+    type PartnerTypeEnum required
+    connection ConnetionTypeEnum
+    portType AwsTypeEnum
+    port String
+    market String
+    locationId Integer
+    vxcpermitted Boolean
+    locationIx String
+    vlanPort String
+}
+
+
+entity ProviderPort {
+    name String required minlength(3) maxlength(30)
+    uid String
+    description String
+    type PartnerTypeEnum required
+    connection ConnetionTypeEnum
+    portType AwsTypeEnum
+    portId String
+    market String
+    locationId Integer 
+}
+
+
+entity Location {
+    code String  required minlength(3) maxlength(30)
+    description String
+    address String
+    uuid String
+}
+
+
+entity UserService {
+	type ConnectTypeEnum
+    name String 
+    description String
+    serviceKey String
+    rateLimit Integer
+    price String
+    uuid String
+    productUid String
+    reTaggedVlanId Integer
+    provisioningStatus ProvisioningStatusEnum
+    vlanIdA Integer
+    vlanIdB Integer
+    vlanIdS Integer
+    ntuId Long
+    userIp String
+    firewallPrice String
+    firewallStatus FirewallStatusEnum 
+    state ServiceStateEnum
+    bEndProductUid String
+	partnerType PartnerTypeEnum
+	circuitType CircuitTypeEnum
+    userSubnet String
+	myGw String
+    activePortGw String
+	awsAuthKey String
+	awsIp String
+	asn Integer
+    peerAsn Integer
+	vxcType VXCTypeEnum 
+	    
+}
+
+entity RealmIp {
+	 subnet String
+	 name String
+	 desciption String
+	 mask String
+	 subnetSize String
+	 firstIp String
+	 lastIp String
+	 broadcast String
+	 cir String
+	 ipsecGateway String
+}
+
+entity AddressAllocation {
+	subnet String
+	deviceName String
+	deviceMode NtuModeEnum
+	deviceId Long
+	deviceType PortServiceTypeEnum
+	description String
+	allocationType AllocationTypeEnum
+	serialNumber String
+	
+}
+
+entity DeviceConfiguration {
+  
+    uid String
+    description String
+    serialNumber String 
+	hostName String 	
+	loIp String 	
+    firmwareVersion String   
+ 	endpoint String 
+ 	restUsername String 
+ 	restPassword String   
+   	restEnabled Boolean   
+    mode NtuModeEnum
+    defaultRate Integer
+    subnet String
+	deviceType PortServiceTypeEnum
+	addressSetupType AddressSetupTypeEnum
+}
+
+entity TemplateConfiguration {
+  
+    name String
+    description String
+    configuration TextBlob 
+}
+
+
+entity PolicerSchedule {
+	name String
+	description String
+	days ScheduleDayEnum
+}
+
+entity PolicerRange {
+	name String
+	burst Integer
+	bandwidth Integer
+	startPolicer ZonedDateTime
+	endPolicer ZonedDateTime
+	rangeType RangeTypeEnum
+}
+
+entity ThirdPartyApi {
+    name String required minlength(3) maxlength(30)   
+    description String
+    api ApiType required    
+    stage String   
+    username String   
+    secret String   
+    privateKeyCert String   
+    privateKeyPassword String   
+    billingUid String    
+    productUid String   
+    endpoint String
+    allowSharedPortsUid String
+    connectionType PortApiTypeEnum 
+}
+
+entity XeroAccount {
+	contactId String
+}
+
+entity ProviderLog{
+	orgId String
+	tenantId String 
+	serviceId Long
+	log TextBlob
+	type String
+	jobUid String
+	ntuId Long
+	request TextBlob
+	responseLog TextBlob
+}
+
+
+entity ServiceCode {
+    name String
+    command TextBlob
+    description String
+    enabled Boolean
+    serviceUrl String
+    hostedType HostedTypeEnum
+    creationType CreationTypeEnum
+    tag String
+    dtoClass String
+}
+
+entity ServiceConfiguration {
+    name String
+    description String
+    tenantType TenantTypeEnum
+    command TextBlob
+    test String
+    useDefaultCommands Boolean
+    
+}
+
+entity TileConfiguration {
+    name String
+    description String
+    command TextBlob
+  
+}
+
+entity ProviderConfiguration {
+	name String
+	description String
+	type PartnerTypeEnum required
+	apiType ApiTypeEnum
+	hasPortId Boolean
+    
+}
+entity TileTenantConfiguration {
+	tenantId String
+	orgId String
+}
+
+entity EntityManager {
+	name String
+	description String
+	uid UUID
+}
+
+
+
+/* ENUMS STARTS */
+enum AllocationTypeEnum{
+	RESERVED, AUTO
+}
+
+enum HostedTypeEnum{
+	CIRCUIT,VLAN 
+}
+enum CreationTypeEnum{
+	CIRCUITVLAN, AUTOGENVLAN
+}
+
+enum EntityTypeEnum{
+	SYSTEM,SETTING
+}
+
+enum ApiTypeEnum{
+	NONE,CLIENT 
+}
+
+enum VXCTypeEnum {
+	PRIMARY,SECONDARY
+}
+
+
+enum ItemBillingType {
+	DEVICE,SERVICE,BOD
+}
+
+enum DeviceEntryEnum{
+	UNASSIGNED,
+	ASSIGNED
+}
+
+enum BillingTypeEnum{
+	XERO,HOSTBILL,LOCAL
+}
+
+enum TenantTypeEnum {
+	ALL,SINGLE
+}
+
+enum RangeTypeEnum {
+	EVERYDAY, BETWEEN, WEEKDAYS, WEEKENDS, DAYS, FROM_TO_DAY
+}
+
+enum OnEventTypeEnum {
+	BEFORE_CREATE_SERVICE,
+	CREATE_SERVICE,
+	DISABLE_SERVICE_FROM_NTU,
+	DELETE_SERVICE,
+	UPDATE_SERVICE
+	
+}
+
+ enum ServiceTypeEnum {
+    ANY,AWS,IX,VXC,AZURE,AZURE_PRIVATE,AZURE_PUBLIC,AZURE_MICROSOFT,OFFICE,INTERNET,ZETTA_INTERNET,DNS_FILTER,ZETTA_SERVICE,INTERNET_LAYER3,MCON,ALIBABA,IBM,GOOGLE,ORACLE,XC
+}
+
+enum FilterCommandTypeEnum{
+	CIRCUIT,ROUTING_ROUTE,ROUTING_NAT,ANY,POLICER
+}
+
+enum CircuitTypeEnum {
+	  VLAN,CIRCUIT,ROUTING_ROUTE,ROUTING_NAT
+}
+
+enum ServiceStateEnum {
+	DESIGN,ACTIVE,ON_HOLD,DISABLED
+}
+
+enum FirewallStatusEnum {
+	 DESIGN,IN_PROGRESS,ENABLED,SLEEP,FAILED,DISABLED
+}
+
+enum OsTypeEnum {
+	 JUNOS, MIKROTIK
+}
+
+enum AwsTypeEnum {
+    PUBLIC,PRIVATE
+}
+
+enum PortApiTypeEnum {
+    SHARED,PRIVATE
+}
+
+enum ConnectTypeEnum {
+    AWS,IX,VXC,AZURE,AZURE_PRIVATE,AZURE_PUBLIC,AZURE_MICROSOFT,OFFICE,INTERNET,ZETTA_INTERNET,DNS_FILTER,ZETTA_SERVICE,INTERNET_LAYER3,MCON,ALIBABA,IBM,GOOGLE,ORACLE,XC
+}
+
+enum ProvisioningStatusEnum {
+    NEW,DESIGN,IN_PROGRESS,ON_HOLD,DEPLOYABLE,CONFIGURED,LIVE,CANCELLED,CANCELLED_PARENT,SLEEP,FAILED,DECOMMISSIONED,DISABLED,PRE_APPROVED,APPROVED
+}
+
+enum PartnerTypeEnum {
+    MEGAPORT,ISP,ZETTA
+}
+
+enum AwsCountryEnum {
+	AUSTRALIA,
+	GERMANY,
+	NETHERLANDS,
+	SINGAPORE,
+	USA,
+	UK
+}
+
+ enum InternetTypeEnum {
+    LAYER2,STATIC_ADDRESS,PPPOE,DHCP,BGP,XC,VXC
+}
+
+
+enum ConnetionTypeEnum {
+    LAYER2,LAYER3
+}
+
+enum DeviceTargetTypeEnum {
+    NTU,FIREWALL,SWITCH,DEMO
+}
+
+enum PortTypeEnum {
+    ETHERNET,SFP
+}
+
+ enum EventTypeEnum {
+    FIREWALL_ACTIVATE,FIREWALL_DEACTIVATE,DELETE_SERVICE,CHANGE_PORT, RETAGG_VLAN, PORT_SPEED_CHANGE, SERVICE_CREATE, SERVICE_CREATE_FAILED, MANAGED_FIREWALL_CREATE,
+    MANAGED_FIREWALL_DELETE,MANAGED_FIREWALL_UPDATE,MANAGED_FIREWALL_DECOMMISSION, REQUEST_DECOMMISSION,DISABLE_SERVICE_FROM_NTU,
+    RULE_SET_UPDATE,RULE_SET_CREATE,RULE_SET_DELETE,RULE_SET_REORDER,SERVICE_UPDATE,
+    POOL_UPDATE,POOL_CREATE,POOL_DELETE,ON_COMMIT,SERVICE_AND_PORT_CHANGE,
+    EBGP_FILTERS_UPDATE,
+    STATIC_ROUTE_CREATE,
+    STATIC_ROUTE_UPDATE,
+    STATIC_ROUTE_DELETE,
+    UPDATE_RATE,
+    DEFAULT_POLICY_UPDATE, POLICY_CREATE, POLICY_DELETE, POLICY_UPDATE, APPLICATION_UPDATE, APPLICATION_DELETE,APPLICATION_CREATE, POLICY_REORDER, ZONE_CREATE,ZONE_UPDATE,ZONE_DELETE
+}
+
+enum ProductTypeEnum {
+    MEGAPORT,IX,VXC,CXC
+}
+
+enum EventStatusEnum {
+    COMPLETED,REQUEST,FAILED,ERROR,PROGRESSING
+}
+
+enum NtuModeEnum {
+	DEMO,EDGE,CLOUD,MANAGED,BRIDGE,SD_WAN
+}
+
+enum PortServiceTypeEnum {
+    EDGE,SWITCH,FIREWALL,NTU,PE
+}
+
+enum ScheduleDayEnum {
+    MONDAY,TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+}
+
+enum NtuSerieEnum {
+    NTU,PE
+}
+
+enum ApiType {
+	MEGAPORT,XERO
+}
+enum VlanTypeEnum {
+	CCC,VLAN
+}
+enum AddressSetupTypeEnum {
+	FIRST,LAST,RANDOM,MANUAL
+}
+/* ENUMS ENDS */
+
+
+/* RELATIONS */
+
+/* ONETOMANY START */
+relationship OneToMany {
+	Ntu{port(name)} to NtuPort{ntu(name)}
+	NtuPort{userServices(name)} to UserService{ntuPort(name)}
+	NtuType{switch(name)} to CentralSwitch{ntutype(model)}
+	NtuType{ntu(name)} to Ntu{ntutype(model)}	
+		
+}
+/* ONETOMANY END */
+
+/* ONETOONE START */
+
+
+/* ONETOONE END */
+relationship OneToOne {
+	PolicerSchedule{ntu(name)} to Ntu
+	Ntu{deviceConfiguration(serialNumber)} to DeviceConfiguration
+}
+
+/* MANYTOONE START */
+relationship ManyToOne {
+	UserProfile{userRole(name)} to UserRole
+	
+	CircuitVlan{serviceConfiguration(name)} to ServiceConfiguration,
+	NotificationEvent{job} to ConfigJob
+	RateChangeLog{userService(name)} to UserService
+	ProviderPort{thirdPartyApi(name)} to ThirdPartyApi
+	Partner{centralSwitch(name)} to CentralSwitch
+	VntuDownlinkPort{centralSwitch(name)} to CentralSwitch
+//	NtuEntry{ntutype(model)} to NtuType,
+	//Ntu{providerGroup(name)} to ProviderGroup,
+//	ProviderGroup{organization(name)} to Organization,
+	//ItemCode{provider(name)} to Partner,
+	ServiceConfiguration{serviceCode(name)} to ServiceCode
+	RealmIp{location(code)} to Location
+	
+	//Ntu{allocation(subnet)} to AddressAllocation,
+	Ntu{ntutype(model)} to NtuType
+	DeviceConfiguration{ntutype(model)} to NtuType
+	DeviceConfiguration{configuration(name)} to TemplateConfiguration
+	DeviceConfiguration{realm(subnet)} to RealmIp,
+//	Ntu{deviceConfiguraiton(name)} to DeviceConfiguration,
+	
+	ServiceConfiguration{provider(name)} to Partner
+	ServiceConfiguration{priceCode(name)} to ItemCode
+	ServiceCode{providerType(name)} to ProviderConfiguration
+	Partner{providerCode(name)} to ProviderConfiguration
+	CircuitVlan{serviceConfiguration(name)} to ServiceConfiguration
+	//Ntu{location(code)} to Location,
+	CentralSwitch{location(code)} to Location
+	CentralSwitch{ntutype(model)} to NtuType
+	TileTenantConfiguration{tileConfiguration(name)} to TileConfiguration
+	ServiceCode{serviceType(code)} to ServiceType,
+	TileConfiguration{serviceType(code)} to ServiceType
+	
+}
+
+/* MANYTOONE END */
+
+/* MANYTOMANY START */
+relationship ManyToMany {
+	PolicerSchedule{policerRange(name)} to PolicerRange{policerSchedule(name)}	
+	ServiceConfiguration{commands(name)} to ServiceCommand{serviceConfiguration(name)}
+	TileConfiguration{services(name)} to ServiceConfiguration{tileConfiguration(name)}
+	ProviderConfiguration{services(code)} to ServiceType
+	UserRole{authorities(name)} to Authority
+	
+}
+
+/* MANYTOMANY END */
+
+/* END RELATIONS */
+
+//microservice * with activeportmicro
+dto * with mapstruct 
+paginate all with pagination
+service all with serviceImpl
