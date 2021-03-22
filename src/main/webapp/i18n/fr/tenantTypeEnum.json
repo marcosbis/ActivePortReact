@@ -1,0 +1,9 @@
+{
+  "activePortApp": {
+    "TenantTypeEnum": {
+      "null": "",
+      "ALL": "ALL",
+      "SINGLE": "SINGLE"
+    }
+  }
+}

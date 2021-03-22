@@ -1,0 +1,12 @@
+{
+  "activePortApp": {
+    "PortServiceTypeEnum": {
+      "null": "",
+      "EDGE": "EDGE",
+      "SWITCH": "SWITCH",
+      "FIREWALL": "FIREWALL",
+      "NTU": "NTU",
+      "PE": "PE"
+    }
+  }
+}

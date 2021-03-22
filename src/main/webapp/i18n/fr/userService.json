@@ -1,0 +1,51 @@
+{
+  "activePortApp": {
+    "userService": {
+      "home": {
+        "title": "UserServices",
+        "createLabel": "Créer un nouveau User Service",
+        "createOrEditLabel": "Créer ou éditer un User Service",
+        "notFound": "Aucun User Service trouvé"
+      },
+      "created": "Un nouveau User Service a été créé avec l'identifiant {{ param }}",
+      "updated": "Le User Service avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le User Service avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le User Service {{ id }} ?"
+      },
+      "detail": {
+        "title": "User Service"
+      },
+      "type": "Type",
+      "name": "Name",
+      "description": "Description",
+      "serviceKey": "Service Key",
+      "rateLimit": "Rate Limit",
+      "price": "Price",
+      "uuid": "Uuid",
+      "productUid": "Product Uid",
+      "reTaggedVlanId": "Re Tagged Vlan Id",
+      "provisioningStatus": "Provisioning Status",
+      "vlanIdA": "Vlan Id A",
+      "vlanIdB": "Vlan Id B",
+      "vlanIdS": "Vlan Id S",
+      "ntuId": "Ntu Id",
+      "userIp": "User Ip",
+      "firewallPrice": "Firewall Price",
+      "firewallStatus": "Firewall Status",
+      "state": "State",
+      "bEndProductUid": "B End Product Uid",
+      "partnerType": "Partner Type",
+      "circuitType": "Circuit Type",
+      "userSubnet": "User Subnet",
+      "myGw": "My Gw",
+      "activePortGw": "Active Port Gw",
+      "awsAuthKey": "Aws Auth Key",
+      "awsIp": "Aws Ip",
+      "asn": "Asn",
+      "peerAsn": "Peer Asn",
+      "vxcType": "Vxc Type",
+      "ntuPort": "Ntu Port"
+    }
+  }
+}

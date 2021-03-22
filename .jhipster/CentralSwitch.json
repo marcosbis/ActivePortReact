@@ -1,0 +1,103 @@
+{
+  "name": "CentralSwitch",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "hostId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "serialNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ipAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "companyName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "hostName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "configBackup",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "poolVlanStart",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "poolVlanEnd",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "endpoint",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "restUsername",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "restPassword",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "restEnabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "autoRollback",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "feign",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "location",
+      "otherEntityRelationshipName": "centralSwitch",
+      "relationshipName": "location",
+      "otherEntityField": "code"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "ntuType",
+      "otherEntityRelationshipName": "centralSwitch",
+      "relationshipName": "ntutype",
+      "otherEntityField": "model"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "ntuType",
+      "otherEntityRelationshipName": "switch",
+      "relationshipName": "ntutype",
+      "otherEntityField": "model"
+    }
+  ],
+  "changelogDate": "20210322202945",
+  "entityTableName": "central_switch",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

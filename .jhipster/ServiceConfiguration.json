@@ -1,0 +1,81 @@
+{
+  "name": "ServiceConfiguration",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tenantType",
+      "fieldType": "TenantTypeEnum",
+      "fieldValues": "ALL,SINGLE"
+    },
+    {
+      "fieldName": "command",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "test",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "useDefaultCommands",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "serviceCode",
+      "otherEntityRelationshipName": "serviceConfiguration",
+      "relationshipName": "serviceCode",
+      "otherEntityField": "name"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "partner",
+      "otherEntityRelationshipName": "serviceConfiguration",
+      "relationshipName": "provider",
+      "otherEntityField": "name"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "itemCode",
+      "otherEntityRelationshipName": "serviceConfiguration",
+      "relationshipName": "priceCode",
+      "otherEntityField": "name"
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "serviceCommand",
+      "otherEntityRelationshipName": "serviceConfiguration",
+      "relationshipName": "commands",
+      "otherEntityField": "name",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "tileConfiguration",
+      "otherEntityRelationshipName": "services",
+      "relationshipName": "tileConfiguration",
+      "otherEntityField": "name",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20210322210045",
+  "entityTableName": "service_configuration",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

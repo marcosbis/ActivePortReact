@@ -1,0 +1,29 @@
+{
+  "name": "EntityManager",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "uid",
+      "fieldType": "UUID"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210322210445",
+  "entityTableName": "entity_manager",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

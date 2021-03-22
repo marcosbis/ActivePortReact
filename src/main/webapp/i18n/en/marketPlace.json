@@ -1,0 +1,62 @@
+{
+  "activePortApp": {
+    "marketPlace": {
+      "home": {
+        "title": "Market Places",
+        "createLabel": "Create a new Market Place",
+        "createOrEditLabel": "Create or edit a Market Place",
+        "notFound": "No Market Places found"
+      },
+      "created": "A new Market Place is created with identifier {{ param }}",
+      "updated": "A Market Place is updated with identifier {{ param }}",
+      "deleted": "A Market Place is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Market Place {{ id }}?"
+      },
+      "detail": {
+        "title": "Market Place"
+      },
+      "companyUid": "Company Uid",
+      "companyName": "Company Name",
+      "partnerUid": "Partner Uid",
+      "accountId": "Account Id",
+      "title": "Title",
+      "locationId": "Location Id",
+      "speed": "Speed",
+      "rank": "Rank",
+      "bandwidth": "Bandwidth",
+      "locationName": "Location Name",
+      "locationMetro": "Location Metro",
+      "portId": "Port Id",
+      "type": "Type",
+      "name": "Name",
+      "description": "Description",
+      "serviceKey": "Service Key",
+      "rateLimit": "Rate Limit",
+      "price": "Price",
+      "uuid": "Uuid",
+      "productUid": "Product Uid",
+      "reTaggedVlanId": "Re Tagged Vlan Id",
+      "provisioningStatus": "Provisioning Status",
+      "vlanIdA": "Vlan Id A",
+      "vlanIdB": "Vlan Id B",
+      "vlanIdS": "Vlan Id S",
+      "ntuId": "Ntu Id",
+      "userIp": "User Ip",
+      "firewallPrice": "Firewall Price",
+      "firewallStatus": "Firewall Status",
+      "state": "State",
+      "bEndProductUid": "B End Product Uid",
+      "partnerType": "Partner Type",
+      "circuitType": "Circuit Type",
+      "userSubnet": "User Subnet",
+      "myGw": "My Gw",
+      "activePortGw": "Active Port Gw",
+      "awsAuthKey": "Aws Auth Key",
+      "awsIp": "Aws Ip",
+      "asn": "Asn",
+      "peerAsn": "Peer Asn",
+      "vxcType": "Vxc Type"
+    }
+  }
+}

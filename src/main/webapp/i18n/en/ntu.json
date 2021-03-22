@@ -1,0 +1,58 @@
+{
+  "activePortApp": {
+    "ntu": {
+      "home": {
+        "title": "Ntus",
+        "createLabel": "Create a new Ntu",
+        "createOrEditLabel": "Create or edit a Ntu",
+        "notFound": "No Ntus found"
+      },
+      "created": "A new Ntu is created with identifier {{ param }}",
+      "updated": "A Ntu is updated with identifier {{ param }}",
+      "deleted": "A Ntu is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Ntu {{ id }}?"
+      },
+      "detail": {
+        "title": "Ntu"
+      },
+      "name": "Name",
+      "hostId": "Host Id",
+      "description": "Description",
+      "serialNumber": "Serial Number",
+      "ipAddress": "Ip Address",
+      "companyName": "Company Name",
+      "hostName": "Host Name",
+      "loIp": "Lo Ip",
+      "category": "Category",
+      "alarmEmailAddresses": "Alarm Email Addresses",
+      "metricCollection": "Metric Collection",
+      "securityCollection": "Security Collection",
+      "alarmCollection": "Alarm Collection",
+      "trendCollection": "Trend Collection",
+      "syslogCollection": "Syslog Collection",
+      "configBackup": "Config Backup",
+      "updateOneconfig": "Update Oneconfig",
+      "firmwareVersion": "Firmware Version",
+      "runningConfig": "Running Config",
+      "configId": "Config Id",
+      "endpoint": "Endpoint",
+      "restUsername": "Rest Username",
+      "restPassword": "Rest Password",
+      "restEnabled": "Rest Enabled",
+      "autoRollback": "Auto Rollback",
+      "mode": "Mode",
+      "timeZone": "Time Zone",
+      "minRate": "Min Rate",
+      "maxRate": "Max Rate",
+      "defaultRate": "Default Rate",
+      "enableBod": "Enable Bod",
+      "burstTime": "Burst Time",
+      "secondlinkPort": "Secondlink Port",
+      "deviceConfiguration": "Device Configuration",
+      "port": "Port",
+      "ntutype": "Ntutype",
+      "ntutype": "Ntutype"
+    }
+  }
+}

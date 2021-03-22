@@ -1,0 +1,11 @@
+id;name;command;on_event;on_service;device_type;enabled;circuit_type;tag;os_type;entry_type
+1;Avon Handcrafted azure;../fake-data/blob/hipster.txt;UPDATE_SERVICE;VXC;PE;false;ANY;Dominican Peso innovative;JUNOS;SETTING
+2;Steel Credit Card Account Mouse;../fake-data/blob/hipster.txt;CREATE_SERVICE;ORACLE;PE;true;POLICER;Fresh Technician 24/7;MIKROTIK;SYSTEM
+3;Australia harness;../fake-data/blob/hipster.txt;CREATE_SERVICE;AWS;NTU;true;POLICER;Integration Associate Planner;JUNOS;SETTING
+4;Program Refined Open-architected;../fake-data/blob/hipster.txt;DELETE_SERVICE;AZURE_PRIVATE;NTU;true;ROUTING_NAT;Poland synthesize;MIKROTIK;SYSTEM
+5;Zambian Kwacha Cotton Serbia;../fake-data/blob/hipster.txt;BEFORE_CREATE_SERVICE;AZURE;PE;true;ROUTING_NAT;Savings Account Russian Federation e-commerce;JUNOS;SYSTEM
+6;index Officer;../fake-data/blob/hipster.txt;DELETE_SERVICE;DNS_FILTER;PE;true;ROUTING_ROUTE;indexing Granite;JUNOS;SETTING
+7;explicit Tasty Plastic Bike convergence;../fake-data/blob/hipster.txt;DISABLE_SERVICE_FROM_NTU;ZETTA_SERVICE;PE;false;ROUTING_NAT;Fantastic Assistant hub;MIKROTIK;SYSTEM
+8;Tactics;../fake-data/blob/hipster.txt;DISABLE_SERVICE_FROM_NTU;AZURE_PUBLIC;NTU;false;ROUTING_ROUTE;deposit alarm Savings Account;JUNOS;SETTING
+9;auxiliary;../fake-data/blob/hipster.txt;UPDATE_SERVICE;AZURE_PUBLIC;PE;true;CIRCUIT;Intuitive customer loyalty;MIKROTIK;SETTING
+10;Belize Dollar bypassing Station;../fake-data/blob/hipster.txt;UPDATE_SERVICE;DNS_FILTER;NTU;true;ROUTING_ROUTE;Tokelau;JUNOS;SETTING

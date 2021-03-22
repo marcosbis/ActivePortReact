@@ -1,0 +1,32 @@
+{
+  "activePortApp": {
+    "serviceConfiguration": {
+      "home": {
+        "title": "Service Configurations",
+        "createLabel": "Create a new Service Configuration",
+        "createOrEditLabel": "Create or edit a Service Configuration",
+        "notFound": "No Service Configurations found"
+      },
+      "created": "A new Service Configuration is created with identifier {{ param }}",
+      "updated": "A Service Configuration is updated with identifier {{ param }}",
+      "deleted": "A Service Configuration is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Service Configuration {{ id }}?"
+      },
+      "detail": {
+        "title": "Service Configuration"
+      },
+      "name": "Name",
+      "description": "Description",
+      "tenantType": "Tenant Type",
+      "command": "Command",
+      "test": "Test",
+      "useDefaultCommands": "Use Default Commands",
+      "serviceCode": "Service Code",
+      "provider": "Provider",
+      "priceCode": "Price Code",
+      "commands": "Commands",
+      "tileConfiguration": "Tile Configuration"
+    }
+  }
+}

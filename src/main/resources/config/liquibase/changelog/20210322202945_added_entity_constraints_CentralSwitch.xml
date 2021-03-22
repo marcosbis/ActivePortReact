@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity CentralSwitch.
+    -->
+    <changeSet id="20210322202945-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="location_id"
+                                 baseTableName="central_switch"
+                                 constraintName="fk_central_switch_location_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="location"/>
+
+        <addForeignKeyConstraint baseColumnNames="ntutype_id"
+                                 baseTableName="central_switch"
+                                 constraintName="fk_central_switch_ntutype_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ntu_type"/>
+
+        <addForeignKeyConstraint baseColumnNames="ntutype_id"
+                                 baseTableName="central_switch"
+                                 constraintName="fk_central_switch_ntutype_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ntu_type"/>
+
+    </changeSet>
+</databaseChangeLog>

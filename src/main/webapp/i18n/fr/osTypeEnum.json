@@ -1,0 +1,9 @@
+{
+  "activePortApp": {
+    "OsTypeEnum": {
+      "null": "",
+      "JUNOS": "JUNOS",
+      "MIKROTIK": "MIKROTIK"
+    }
+  }
+}

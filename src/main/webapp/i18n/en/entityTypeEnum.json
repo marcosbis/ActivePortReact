@@ -1,0 +1,9 @@
+{
+  "activePortApp": {
+    "EntityTypeEnum": {
+      "null": "",
+      "SYSTEM": "SYSTEM",
+      "SETTING": "SETTING"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "UserProfile",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "userRole",
+      "otherEntityRelationshipName": "userProfile",
+      "relationshipName": "userRole",
+      "otherEntityField": "name"
+    }
+  ],
+  "changelogDate": "20210322202745",
+  "entityTableName": "user_profile",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

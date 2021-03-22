@@ -1,0 +1,35 @@
+{
+  "activePortApp": {
+    "partner": {
+      "home": {
+        "title": "Partners",
+        "createLabel": "Créer un nouveau Partner",
+        "createOrEditLabel": "Créer ou éditer un Partner",
+        "notFound": "Aucun Partner trouvé"
+      },
+      "created": "Un nouveau Partner a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Partner avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Partner avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Partner {{ id }} ?"
+      },
+      "detail": {
+        "title": "Partner"
+      },
+      "name": "Name",
+      "email": "Email",
+      "description": "Description",
+      "type": "Type",
+      "connection": "Connection",
+      "portType": "Port Type",
+      "port": "Port",
+      "market": "Market",
+      "locationId": "Location Id",
+      "vxcpermitted": "Vxcpermitted",
+      "locationIx": "Location Ix",
+      "vlanPort": "Vlan Port",
+      "centralSwitch": "Central Switch",
+      "providerCode": "Provider Code"
+    }
+  }
+}

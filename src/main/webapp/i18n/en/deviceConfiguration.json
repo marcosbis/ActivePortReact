@@ -1,0 +1,39 @@
+{
+  "activePortApp": {
+    "deviceConfiguration": {
+      "home": {
+        "title": "Device Configurations",
+        "createLabel": "Create a new Device Configuration",
+        "createOrEditLabel": "Create or edit a Device Configuration",
+        "notFound": "No Device Configurations found"
+      },
+      "created": "A new Device Configuration is created with identifier {{ param }}",
+      "updated": "A Device Configuration is updated with identifier {{ param }}",
+      "deleted": "A Device Configuration is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Device Configuration {{ id }}?"
+      },
+      "detail": {
+        "title": "Device Configuration"
+      },
+      "uid": "Uid",
+      "description": "Description",
+      "serialNumber": "Serial Number",
+      "hostName": "Host Name",
+      "loIp": "Lo Ip",
+      "firmwareVersion": "Firmware Version",
+      "endpoint": "Endpoint",
+      "restUsername": "Rest Username",
+      "restPassword": "Rest Password",
+      "restEnabled": "Rest Enabled",
+      "mode": "Mode",
+      "defaultRate": "Default Rate",
+      "subnet": "Subnet",
+      "deviceType": "Device Type",
+      "addressSetupType": "Address Setup Type",
+      "ntutype": "Ntutype",
+      "configuration": "Configuration",
+      "realm": "Realm"
+    }
+  }
+}

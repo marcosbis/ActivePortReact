@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity PolicerSchedule.
+    -->
+    <changeSet id="20210322205445-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="ntu_id"
+                                 baseTableName="policer_schedule"
+                                 constraintName="fk_policer_schedule_ntu_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ntu"/>
+
+        <addForeignKeyConstraint baseColumnNames="policer_schedule_id"
+                                 baseTableName="policer_schedule_policer_range"
+                                 constraintName="fk_policer_schedule_policer_range_policer_schedule_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="policer_schedule"/>
+
+        <addForeignKeyConstraint baseColumnNames="policer_range_id"
+                                 baseTableName="policer_schedule_policer_range"
+                                 constraintName="fk_policer_schedule_policer_range_policer_range_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="policer_range"/>
+        
+    </changeSet>
+</databaseChangeLog>

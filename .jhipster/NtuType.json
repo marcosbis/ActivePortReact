@@ -1,0 +1,77 @@
+{
+  "name": "NtuType",
+  "fields": [
+    {
+      "fieldName": "model",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ethernetPorts",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "sfpPorts",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "pictureContentType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "portServiceType",
+      "fieldType": "PortServiceTypeEnum",
+      "fieldValues": "EDGE,SWITCH,FIREWALL,NTU,PE"
+    },
+    {
+      "fieldName": "osType",
+      "fieldType": "OsTypeEnum",
+      "fieldValues": "JUNOS,MIKROTIK"
+    },
+    {
+      "fieldName": "etherPrefix",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sfpPrefix",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "startIndex",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "portTemplate",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "centralSwitch",
+      "otherEntityRelationshipName": "ntutype",
+      "relationshipName": "switch"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "ntu",
+      "otherEntityRelationshipName": "ntutype",
+      "relationshipName": "ntu"
+    }
+  ],
+  "changelogDate": "20210322204145",
+  "entityTableName": "ntu_type",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

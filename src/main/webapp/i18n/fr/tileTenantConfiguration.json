@@ -1,0 +1,24 @@
+{
+  "activePortApp": {
+    "tileTenantConfiguration": {
+      "home": {
+        "title": "TileTenantConfigurations",
+        "createLabel": "Créer un nouveau Tile Tenant Configuration",
+        "createOrEditLabel": "Créer ou éditer un Tile Tenant Configuration",
+        "notFound": "Aucun Tile Tenant Configuration trouvé"
+      },
+      "created": "Un nouveau Tile Tenant Configuration a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Tile Tenant Configuration avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Tile Tenant Configuration avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Tile Tenant Configuration {{ id }} ?"
+      },
+      "detail": {
+        "title": "Tile Tenant Configuration"
+      },
+      "tenantId": "Tenant Id",
+      "orgId": "Org Id",
+      "tileConfiguration": "Tile Configuration"
+    }
+  }
+}

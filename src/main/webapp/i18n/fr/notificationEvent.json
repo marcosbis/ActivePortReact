@@ -1,0 +1,33 @@
+{
+  "activePortApp": {
+    "notificationEvent": {
+      "home": {
+        "title": "NotificationEvents",
+        "createLabel": "Créer un nouveau Notification Event",
+        "createOrEditLabel": "Créer ou éditer un Notification Event",
+        "notFound": "Aucun Notification Event trouvé"
+      },
+      "created": "Un nouveau Notification Event a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Notification Event avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Notification Event avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Notification Event {{ id }} ?"
+      },
+      "detail": {
+        "title": "Notification Event"
+      },
+      "ntuName": "Ntu Name",
+      "ntuId": "Ntu Id",
+      "status": "Status",
+      "type": "Type",
+      "message": "Message",
+      "serviceName": "Service Name",
+      "serviceId": "Service Id",
+      "vxcId": "Vxc Id",
+      "uuid": "Uuid",
+      "user": "User",
+      "errorMessage": "Error Message",
+      "job": "Job"
+    }
+  }
+}

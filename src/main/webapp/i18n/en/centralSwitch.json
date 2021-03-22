@@ -1,0 +1,40 @@
+{
+  "activePortApp": {
+    "centralSwitch": {
+      "home": {
+        "title": "Central Switches",
+        "createLabel": "Create a new Central Switch",
+        "createOrEditLabel": "Create or edit a Central Switch",
+        "notFound": "No Central Switches found"
+      },
+      "created": "A new Central Switch is created with identifier {{ param }}",
+      "updated": "A Central Switch is updated with identifier {{ param }}",
+      "deleted": "A Central Switch is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Central Switch {{ id }}?"
+      },
+      "detail": {
+        "title": "Central Switch"
+      },
+      "name": "Name",
+      "hostId": "Host Id",
+      "description": "Description",
+      "serialNumber": "Serial Number",
+      "ipAddress": "Ip Address",
+      "companyName": "Company Name",
+      "hostName": "Host Name",
+      "configBackup": "Config Backup",
+      "poolVlanStart": "Pool Vlan Start",
+      "poolVlanEnd": "Pool Vlan End",
+      "endpoint": "Endpoint",
+      "restUsername": "Rest Username",
+      "restPassword": "Rest Password",
+      "restEnabled": "Rest Enabled",
+      "autoRollback": "Auto Rollback",
+      "feign": "Feign",
+      "location": "Location",
+      "ntutype": "Ntutype",
+      "ntutype": "Ntutype"
+    }
+  }
+}

@@ -3,7 +3,7 @@ package com.activeport.web.config.timezone;
 import static java.lang.String.format;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.activeport.web.ActivePortReactApp;
+import com.activeport.web.ActivePortApp;
 import com.activeport.web.repository.timezone.DateTimeWrapper;
 import com.activeport.web.repository.timezone.DateTimeWrapperRepository;
 import java.time.*;
@@ -20,7 +20,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * Integration tests for the ZoneId Hibernate configuration.
  */
-@SpringBootTest(classes = ActivePortReactApp.class)
+@SpringBootTest(classes = ActivePortApp.class)
 public class HibernateTimeZoneIT {
     @Autowired
     private DateTimeWrapperRepository dateTimeWrapperRepository;

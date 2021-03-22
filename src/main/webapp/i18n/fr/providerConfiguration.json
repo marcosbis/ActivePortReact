@@ -1,0 +1,27 @@
+{
+  "activePortApp": {
+    "providerConfiguration": {
+      "home": {
+        "title": "ProviderConfigurations",
+        "createLabel": "Créer un nouveau Provider Configuration",
+        "createOrEditLabel": "Créer ou éditer un Provider Configuration",
+        "notFound": "Aucun Provider Configuration trouvé"
+      },
+      "created": "Un nouveau Provider Configuration a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Provider Configuration avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Provider Configuration avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Provider Configuration {{ id }} ?"
+      },
+      "detail": {
+        "title": "Provider Configuration"
+      },
+      "name": "Name",
+      "description": "Description",
+      "type": "Type",
+      "apiType": "Api Type",
+      "hasPortId": "Has Port Id",
+      "services": "Services"
+    }
+  }
+}

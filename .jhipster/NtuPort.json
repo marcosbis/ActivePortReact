@@ -1,0 +1,76 @@
+{
+  "name": "NtuPort",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "label",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mac",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "port",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "portType",
+      "fieldType": "PortTypeEnum",
+      "fieldValues": "ETHERNET,SFP"
+    },
+    {
+      "fieldName": "trunk",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "jumbo",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "portSpeed",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "internetPort",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "uplinkPort",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "userService",
+      "otherEntityRelationshipName": "ntuPort",
+      "relationshipName": "userServices"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "ntu",
+      "otherEntityRelationshipName": "port",
+      "relationshipName": "ntu",
+      "otherEntityField": "name"
+    }
+  ],
+  "changelogDate": "20210322204045",
+  "entityTableName": "ntu_port",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

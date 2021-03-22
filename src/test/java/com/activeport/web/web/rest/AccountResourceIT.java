@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-import com.activeport.web.ActivePortReactApp;
+import com.activeport.web.ActivePortApp;
 import com.activeport.web.config.Constants;
 import com.activeport.web.domain.User;
 import com.activeport.web.repository.AuthorityRepository;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @AutoConfigureMockMvc
 @WithMockUser(value = TEST_USER_LOGIN)
-@SpringBootTest(classes = ActivePortReactApp.class)
+@SpringBootTest(classes = ActivePortApp.class)
 public class AccountResourceIT {
     static final String TEST_USER_LOGIN = "test";
 

@@ -1,0 +1,102 @@
+{
+  "name": "DeviceConfiguration",
+  "fields": [
+    {
+      "fieldName": "uid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "serialNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "hostName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "loIp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "firmwareVersion",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "endpoint",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "restUsername",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "restPassword",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "restEnabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "mode",
+      "fieldType": "NtuModeEnum",
+      "fieldValues": "DEMO,EDGE,CLOUD,MANAGED,BRIDGE,SD_WAN"
+    },
+    {
+      "fieldName": "defaultRate",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "subnet",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deviceType",
+      "fieldType": "PortServiceTypeEnum",
+      "fieldValues": "EDGE,SWITCH,FIREWALL,NTU,PE"
+    },
+    {
+      "fieldName": "addressSetupType",
+      "fieldType": "AddressSetupTypeEnum",
+      "fieldValues": "FIRST,LAST,RANDOM,MANUAL"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "ntuType",
+      "otherEntityRelationshipName": "deviceConfiguration",
+      "relationshipName": "ntutype",
+      "otherEntityField": "model"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "templateConfiguration",
+      "otherEntityRelationshipName": "deviceConfiguration",
+      "relationshipName": "configuration",
+      "otherEntityField": "name"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "realmIp",
+      "otherEntityRelationshipName": "deviceConfiguration",
+      "relationshipName": "realm",
+      "otherEntityField": "subnet"
+    }
+  ],
+  "changelogDate": "20210322205245",
+  "entityTableName": "device_configuration",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

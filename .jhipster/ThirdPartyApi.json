@@ -1,0 +1,75 @@
+{
+  "name": "ThirdPartyApi",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMinlength": "3",
+      "fieldValidateRulesMaxlength": "30"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "api",
+      "fieldType": "ApiType",
+      "fieldValues": "MEGAPORT,XERO",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "stage",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "username",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secret",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "privateKeyCert",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "privateKeyPassword",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "billingUid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productUid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "endpoint",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "allowSharedPortsUid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "connectionType",
+      "fieldType": "PortApiTypeEnum",
+      "fieldValues": "SHARED,PRIVATE"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210322205645",
+  "entityTableName": "third_party_api",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

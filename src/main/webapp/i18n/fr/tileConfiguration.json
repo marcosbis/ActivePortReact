@@ -1,0 +1,26 @@
+{
+  "activePortApp": {
+    "tileConfiguration": {
+      "home": {
+        "title": "TileConfigurations",
+        "createLabel": "Créer un nouveau Tile Configuration",
+        "createOrEditLabel": "Créer ou éditer un Tile Configuration",
+        "notFound": "Aucun Tile Configuration trouvé"
+      },
+      "created": "Un nouveau Tile Configuration a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Tile Configuration avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Tile Configuration avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Tile Configuration {{ id }} ?"
+      },
+      "detail": {
+        "title": "Tile Configuration"
+      },
+      "name": "Name",
+      "description": "Description",
+      "command": "Command",
+      "serviceType": "Service Type",
+      "services": "Services"
+    }
+  }
+}

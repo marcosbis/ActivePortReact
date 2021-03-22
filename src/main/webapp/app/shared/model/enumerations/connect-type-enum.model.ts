@@ -1,0 +1,39 @@
+export const enum ConnectTypeEnum {
+  AWS = 'AWS',
+
+  IX = 'IX',
+
+  VXC = 'VXC',
+
+  AZURE = 'AZURE',
+
+  AZURE_PRIVATE = 'AZURE_PRIVATE',
+
+  AZURE_PUBLIC = 'AZURE_PUBLIC',
+
+  AZURE_MICROSOFT = 'AZURE_MICROSOFT',
+
+  OFFICE = 'OFFICE',
+
+  INTERNET = 'INTERNET',
+
+  ZETTA_INTERNET = 'ZETTA_INTERNET',
+
+  DNS_FILTER = 'DNS_FILTER',
+
+  ZETTA_SERVICE = 'ZETTA_SERVICE',
+
+  INTERNET_LAYER3 = 'INTERNET_LAYER3',
+
+  MCON = 'MCON',
+
+  ALIBABA = 'ALIBABA',
+
+  IBM = 'IBM',
+
+  GOOGLE = 'GOOGLE',
+
+  ORACLE = 'ORACLE',
+
+  XC = 'XC',
+}

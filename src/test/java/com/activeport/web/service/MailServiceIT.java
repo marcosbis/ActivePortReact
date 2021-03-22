@@ -4,7 +4,7 @@ import static org.assertj.core.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
-import com.activeport.web.ActivePortReactApp;
+import com.activeport.web.ActivePortApp;
 import com.activeport.web.config.Constants;
 import com.activeport.web.domain.User;
 import io.github.jhipster.config.JHipsterProperties;
@@ -38,17 +38,11 @@ import org.thymeleaf.spring5.SpringTemplateEngine;
 /**
  * Integration tests for {@link MailService}.
  */
-@SpringBootTest(classes = ActivePortReactApp.class)
+@SpringBootTest(classes = ActivePortApp.class)
 public class MailServiceIT {
     private static final String[] languages = {
-        "zh-cn",
-        "nl",
         "en",
         "fr",
-        "de",
-        "it",
-        "pt-br",
-        "es",
         // jhipster-needle-i18n-language-constant - JHipster will add/remove languages in this array
     };
     private static final Pattern PATTERN_LOCALE_3 = Pattern.compile("([a-z]{2})-([a-zA-Z]{4})-([a-z]{2})");

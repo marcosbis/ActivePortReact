@@ -1,0 +1,32 @@
+{
+  "activePortApp": {
+    "serviceCommand": {
+      "home": {
+        "title": "ServiceCommands",
+        "createLabel": "Créer un nouveau Service Command",
+        "createOrEditLabel": "Créer ou éditer un Service Command",
+        "notFound": "Aucun Service Command trouvé"
+      },
+      "created": "Un nouveau Service Command a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Service Command avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Service Command avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Service Command {{ id }} ?"
+      },
+      "detail": {
+        "title": "Service Command"
+      },
+      "name": "Name",
+      "command": "Command",
+      "onEvent": "On Event",
+      "onService": "On Service",
+      "deviceType": "Device Type",
+      "enabled": "Enabled",
+      "circuitType": "Circuit Type",
+      "tag": "Tag",
+      "osType": "Os Type",
+      "entryType": "Entry Type",
+      "serviceConfiguration": "Service Configuration"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "activePortApp": {
+    "PortTypeEnum": {
+      "null": "",
+      "ETHERNET": "ETHERNET",
+      "SFP": "SFP"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "XeroAccount",
+  "fields": [
+    {
+      "fieldName": "contactId",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210322205745",
+  "entityTableName": "xero_account",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

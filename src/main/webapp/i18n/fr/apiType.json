@@ -1,0 +1,9 @@
+{
+  "activePortApp": {
+    "ApiType": {
+      "null": "",
+      "MEGAPORT": "MEGAPORT",
+      "XERO": "XERO"
+    }
+  }
+}

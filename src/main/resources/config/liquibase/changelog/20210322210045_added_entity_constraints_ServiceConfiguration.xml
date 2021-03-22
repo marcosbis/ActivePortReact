@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity ServiceConfiguration.
+    -->
+    <changeSet id="20210322210045-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="service_code_id"
+                                 baseTableName="service_configuration"
+                                 constraintName="fk_service_configuration_service_code_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="service_code"/>
+
+        <addForeignKeyConstraint baseColumnNames="provider_id"
+                                 baseTableName="service_configuration"
+                                 constraintName="fk_service_configuration_provider_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="partner"/>
+
+        <addForeignKeyConstraint baseColumnNames="price_code_id"
+                                 baseTableName="service_configuration"
+                                 constraintName="fk_service_configuration_price_code_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="item_code"/>
+
+        <addForeignKeyConstraint baseColumnNames="service_configuration_id"
+                                 baseTableName="service_configuration_commands"
+                                 constraintName="fk_service_configuration_commands_service_configuration_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="service_configuration"/>
+
+        <addForeignKeyConstraint baseColumnNames="commands_id"
+                                 baseTableName="service_configuration_commands"
+                                 constraintName="fk_service_configuration_commands_commands_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="service_command"/>
+        
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,46 @@
+{
+  "name": "TileConfiguration",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "command",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "serviceType",
+      "otherEntityRelationshipName": "tileConfiguration",
+      "relationshipName": "serviceType",
+      "otherEntityField": "code"
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "serviceConfiguration",
+      "otherEntityRelationshipName": "tileConfiguration",
+      "relationshipName": "services",
+      "otherEntityField": "name",
+      "ownerSide": true
+    }
+  ],
+  "changelogDate": "20210322210145",
+  "entityTableName": "tile_configuration",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

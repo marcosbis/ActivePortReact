@@ -1,0 +1,22 @@
+{
+  "activePortApp": {
+    "xeroAccount": {
+      "home": {
+        "title": "Xero Accounts",
+        "createLabel": "Create a new Xero Account",
+        "createOrEditLabel": "Create or edit a Xero Account",
+        "notFound": "No Xero Accounts found"
+      },
+      "created": "A new Xero Account is created with identifier {{ param }}",
+      "updated": "A Xero Account is updated with identifier {{ param }}",
+      "deleted": "A Xero Account is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Xero Account {{ id }}?"
+      },
+      "detail": {
+        "title": "Xero Account"
+      },
+      "contactId": "Contact Id"
+    }
+  }
+}

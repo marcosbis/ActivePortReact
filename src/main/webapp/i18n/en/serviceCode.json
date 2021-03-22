@@ -1,0 +1,32 @@
+{
+  "activePortApp": {
+    "serviceCode": {
+      "home": {
+        "title": "Service Codes",
+        "createLabel": "Create a new Service Code",
+        "createOrEditLabel": "Create or edit a Service Code",
+        "notFound": "No Service Codes found"
+      },
+      "created": "A new Service Code is created with identifier {{ param }}",
+      "updated": "A Service Code is updated with identifier {{ param }}",
+      "deleted": "A Service Code is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Service Code {{ id }}?"
+      },
+      "detail": {
+        "title": "Service Code"
+      },
+      "name": "Name",
+      "command": "Command",
+      "description": "Description",
+      "enabled": "Enabled",
+      "serviceUrl": "Service Url",
+      "hostedType": "Hosted Type",
+      "creationType": "Creation Type",
+      "tag": "Tag",
+      "dtoClass": "Dto Class",
+      "providerType": "Provider Type",
+      "serviceType": "Service Type"
+    }
+  }
+}

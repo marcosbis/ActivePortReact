@@ -1,0 +1,13 @@
+{
+  "activePortApp": {
+    "RangeTypeEnum": {
+      "null": "",
+      "EVERYDAY": "EVERYDAY",
+      "BETWEEN": "BETWEEN",
+      "WEEKDAYS": "WEEKDAYS",
+      "WEEKENDS": "WEEKENDS",
+      "DAYS": "DAYS",
+      "FROM_TO_DAY": "FROM_TO_DAY"
+    }
+  }
+}

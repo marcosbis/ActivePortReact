@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity ProviderPort.
+    -->
+    <changeSet id="20210322204745-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="third_party_api_id"
+                                 baseTableName="provider_port"
+                                 constraintName="fk_provider_port_third_party_api_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="third_party_api"/>
+
+    </changeSet>
+</databaseChangeLog>

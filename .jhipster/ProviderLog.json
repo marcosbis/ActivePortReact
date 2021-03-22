@@ -1,0 +1,56 @@
+{
+  "name": "ProviderLog",
+  "fields": [
+    {
+      "fieldName": "orgId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tenantId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "serviceId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "log",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jobUid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ntuId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "request",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "responseLog",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210322205845",
+  "entityTableName": "provider_log",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

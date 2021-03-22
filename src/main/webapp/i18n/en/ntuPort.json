@@ -1,0 +1,34 @@
+{
+  "activePortApp": {
+    "ntuPort": {
+      "home": {
+        "title": "Ntu Ports",
+        "createLabel": "Create a new Ntu Port",
+        "createOrEditLabel": "Create or edit a Ntu Port",
+        "notFound": "No Ntu Ports found"
+      },
+      "created": "A new Ntu Port is created with identifier {{ param }}",
+      "updated": "A Ntu Port is updated with identifier {{ param }}",
+      "deleted": "A Ntu Port is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Ntu Port {{ id }}?"
+      },
+      "detail": {
+        "title": "Ntu Port"
+      },
+      "name": "Name",
+      "label": "Label",
+      "description": "Description",
+      "mac": "Mac",
+      "port": "Port",
+      "portType": "Port Type",
+      "trunk": "Trunk",
+      "jumbo": "Jumbo",
+      "portSpeed": "Port Speed",
+      "internetPort": "Internet Port",
+      "uplinkPort": "Uplink Port",
+      "userServices": "User Services",
+      "ntu": "Ntu"
+    }
+  }
+}

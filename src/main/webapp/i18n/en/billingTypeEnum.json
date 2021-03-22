@@ -1,0 +1,10 @@
+{
+  "activePortApp": {
+    "BillingTypeEnum": {
+      "null": "",
+      "XERO": "XERO",
+      "HOSTBILL": "HOSTBILL",
+      "LOCAL": "LOCAL"
+    }
+  }
+}

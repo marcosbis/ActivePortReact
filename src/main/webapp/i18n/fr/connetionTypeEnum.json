@@ -1,0 +1,9 @@
+{
+  "activePortApp": {
+    "ConnetionTypeEnum": {
+      "null": "",
+      "LAYER2": "LAYER2",
+      "LAYER3": "LAYER3"
+    }
+  }
+}

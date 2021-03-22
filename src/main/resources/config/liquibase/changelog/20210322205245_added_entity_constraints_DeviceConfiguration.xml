@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity DeviceConfiguration.
+    -->
+    <changeSet id="20210322205245-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="ntutype_id"
+                                 baseTableName="device_configuration"
+                                 constraintName="fk_device_configuration_ntutype_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ntu_type"/>
+
+        <addForeignKeyConstraint baseColumnNames="configuration_id"
+                                 baseTableName="device_configuration"
+                                 constraintName="fk_device_configuration_configuration_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="template_configuration"/>
+
+        <addForeignKeyConstraint baseColumnNames="realm_id"
+                                 baseTableName="device_configuration"
+                                 constraintName="fk_device_configuration_realm_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="realm_ip"/>
+
+    </changeSet>
+</databaseChangeLog>

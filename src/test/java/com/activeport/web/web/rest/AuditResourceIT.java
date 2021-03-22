@@ -5,7 +5,7 @@ import static org.hamcrest.Matchers.hasItem;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-import com.activeport.web.ActivePortReactApp;
+import com.activeport.web.ActivePortApp;
 import com.activeport.web.domain.PersistentAuditEvent;
 import com.activeport.web.repository.PersistenceAuditEventRepository;
 import com.activeport.web.security.AuthoritiesConstants;
@@ -28,7 +28,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @AutoConfigureMockMvc
 @WithMockUser(authorities = AuthoritiesConstants.ADMIN)
-@SpringBootTest(classes = ActivePortReactApp.class)
+@SpringBootTest(classes = ActivePortApp.class)
 @Transactional
 public class AuditResourceIT {
     private static final String SAMPLE_PRINCIPAL = "SAMPLE_PRINCIPAL";

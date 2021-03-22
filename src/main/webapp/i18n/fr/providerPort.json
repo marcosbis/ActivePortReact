@@ -1,0 +1,31 @@
+{
+  "activePortApp": {
+    "providerPort": {
+      "home": {
+        "title": "ProviderPorts",
+        "createLabel": "Créer un nouveau Provider Port",
+        "createOrEditLabel": "Créer ou éditer un Provider Port",
+        "notFound": "Aucun Provider Port trouvé"
+      },
+      "created": "Un nouveau Provider Port a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Provider Port avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Provider Port avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Provider Port {{ id }} ?"
+      },
+      "detail": {
+        "title": "Provider Port"
+      },
+      "name": "Name",
+      "uid": "Uid",
+      "description": "Description",
+      "type": "Type",
+      "connection": "Connection",
+      "portType": "Port Type",
+      "portId": "Port Id",
+      "market": "Market",
+      "locationId": "Location Id",
+      "thirdPartyApi": "Third Party Api"
+    }
+  }
+}

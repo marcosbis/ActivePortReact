@@ -3,7 +3,7 @@ package com.activeport.web.security;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 
-import com.activeport.web.ActivePortReactApp;
+import com.activeport.web.ActivePortApp;
 import com.activeport.web.domain.User;
 import com.activeport.web.repository.UserRepository;
 import java.util.Locale;
@@ -19,7 +19,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * Integrations tests for {@link DomainUserDetailsService}.
  */
-@SpringBootTest(classes = ActivePortReactApp.class)
+@SpringBootTest(classes = ActivePortApp.class)
 @Transactional
 public class DomainUserDetailsServiceIT {
     private static final String USER_ONE_LOGIN = "test-user-one";

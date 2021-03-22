@@ -1,0 +1,62 @@
+{
+  "activePortApp": {
+    "marketPlace": {
+      "home": {
+        "title": "MarketPlaces",
+        "createLabel": "Créer un nouveau Market Place",
+        "createOrEditLabel": "Créer ou éditer un Market Place",
+        "notFound": "Aucun Market Place trouvé"
+      },
+      "created": "Un nouveau Market Place a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Market Place avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Market Place avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Market Place {{ id }} ?"
+      },
+      "detail": {
+        "title": "Market Place"
+      },
+      "companyUid": "Company Uid",
+      "companyName": "Company Name",
+      "partnerUid": "Partner Uid",
+      "accountId": "Account Id",
+      "title": "Title",
+      "locationId": "Location Id",
+      "speed": "Speed",
+      "rank": "Rank",
+      "bandwidth": "Bandwidth",
+      "locationName": "Location Name",
+      "locationMetro": "Location Metro",
+      "portId": "Port Id",
+      "type": "Type",
+      "name": "Name",
+      "description": "Description",
+      "serviceKey": "Service Key",
+      "rateLimit": "Rate Limit",
+      "price": "Price",
+      "uuid": "Uuid",
+      "productUid": "Product Uid",
+      "reTaggedVlanId": "Re Tagged Vlan Id",
+      "provisioningStatus": "Provisioning Status",
+      "vlanIdA": "Vlan Id A",
+      "vlanIdB": "Vlan Id B",
+      "vlanIdS": "Vlan Id S",
+      "ntuId": "Ntu Id",
+      "userIp": "User Ip",
+      "firewallPrice": "Firewall Price",
+      "firewallStatus": "Firewall Status",
+      "state": "State",
+      "bEndProductUid": "B End Product Uid",
+      "partnerType": "Partner Type",
+      "circuitType": "Circuit Type",
+      "userSubnet": "User Subnet",
+      "myGw": "My Gw",
+      "activePortGw": "Active Port Gw",
+      "awsAuthKey": "Aws Auth Key",
+      "awsIp": "Aws Ip",
+      "asn": "Asn",
+      "peerAsn": "Peer Asn",
+      "vxcType": "Vxc Type"
+    }
+  }
+}

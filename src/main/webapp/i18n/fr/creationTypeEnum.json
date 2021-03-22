@@ -1,0 +1,9 @@
+{
+  "activePortApp": {
+    "CreationTypeEnum": {
+      "null": "",
+      "CIRCUITVLAN": "CIRCUITVLAN",
+      "AUTOGENVLAN": "AUTOGENVLAN"
+    }
+  }
+}
