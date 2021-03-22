@@ -1,0 +1,33 @@
+{
+  "activePortApp": {
+    "itemCode": {
+      "home": {
+        "title": "Item Codes",
+        "createLabel": "Create a new Item Code",
+        "createOrEditLabel": "Create or edit a Item Code",
+        "notFound": "No Item Codes found"
+      },
+      "created": "A new Item Code is created with identifier {{ param }}",
+      "updated": "A Item Code is updated with identifier {{ param }}",
+      "deleted": "A Item Code is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Item Code {{ id }}?"
+      },
+      "detail": {
+        "title": "Item Code"
+      },
+      "name": "Name",
+      "code": "Code",
+      "codeRate": "Code Rate",
+      "codeActivation": "Code Activation",
+      "description": "Description",
+      "localPriceRate": "Local Price Rate",
+      "localPriceMontlhy": "Local Price Montlhy",
+      "localPriceActivation": "Local Price Activation",
+      "codeUpLift": "Code Up Lift",
+      "upLift": "Up Lift",
+      "useUpLift": "Use Up Lift",
+      "useLocalPrice": "Use Local Price"
+    }
+  }
+}

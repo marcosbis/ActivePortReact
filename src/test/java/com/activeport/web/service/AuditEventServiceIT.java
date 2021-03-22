@@ -2,7 +2,7 @@ package com.activeport.web.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.activeport.web.ActivePortReactApp;
+import com.activeport.web.ActivePortApp;
 import com.activeport.web.domain.PersistentAuditEvent;
 import com.activeport.web.repository.PersistenceAuditEventRepository;
 import io.github.jhipster.config.JHipsterProperties;
@@ -17,7 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * Integration tests for {@link AuditEventService}.
  */
-@SpringBootTest(classes = ActivePortReactApp.class)
+@SpringBootTest(classes = ActivePortApp.class)
 @Transactional
 public class AuditEventServiceIT {
     @Autowired

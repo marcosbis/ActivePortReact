@@ -1,0 +1,9 @@
+{
+  "activePortApp": {
+    "AwsTypeEnum": {
+      "null": "",
+      "PUBLIC": "PUBLIC",
+      "PRIVATE": "PRIVATE"
+    }
+  }
+}

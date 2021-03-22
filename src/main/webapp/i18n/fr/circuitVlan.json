@@ -1,0 +1,33 @@
+{
+  "activePortApp": {
+    "circuitVlan": {
+      "home": {
+        "title": "CircuitVlans",
+        "createLabel": "Créer un nouveau Circuit Vlan",
+        "createOrEditLabel": "Créer ou éditer un Circuit Vlan",
+        "notFound": "Aucun Circuit Vlan trouvé"
+      },
+      "created": "Un nouveau Circuit Vlan a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Circuit Vlan avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Circuit Vlan avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Circuit Vlan {{ id }} ?"
+      },
+      "detail": {
+        "title": "Circuit Vlan"
+      },
+      "zone": "Zone",
+      "serviceKey": "Service Key",
+      "vlanId": "Vlan Id",
+      "rd": "Rd",
+      "serviceId": "Service Id",
+      "tenantName": "Tenant Name",
+      "childServiceId": "Child Service Id",
+      "childNtuId": "Child Ntu Id",
+      "realmIp": "Realm Ip",
+      "internetType": "Internet Type",
+      "type": "Type",
+      "serviceConfiguration": "Service Configuration"
+    }
+  }
+}

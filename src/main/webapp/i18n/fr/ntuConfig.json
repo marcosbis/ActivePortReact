@@ -1,0 +1,25 @@
+{
+  "activePortApp": {
+    "ntuConfig": {
+      "home": {
+        "title": "NtuConfigs",
+        "createLabel": "Créer un nouveau Ntu Config",
+        "createOrEditLabel": "Créer ou éditer un Ntu Config",
+        "notFound": "Aucun Ntu Config trouvé"
+      },
+      "created": "Un nouveau Ntu Config a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Ntu Config avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Ntu Config avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Ntu Config {{ id }} ?"
+      },
+      "detail": {
+        "title": "Ntu Config"
+      },
+      "serialNumber": "Serial Number",
+      "name": "Name",
+      "firmwareVersion": "Firmware Version",
+      "ntuId": "Ntu Id"
+    }
+  }
+}

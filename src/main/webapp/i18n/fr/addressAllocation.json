@@ -1,0 +1,29 @@
+{
+  "activePortApp": {
+    "addressAllocation": {
+      "home": {
+        "title": "AddressAllocations",
+        "createLabel": "Créer un nouveau Address Allocation",
+        "createOrEditLabel": "Créer ou éditer un Address Allocation",
+        "notFound": "Aucun Address Allocation trouvé"
+      },
+      "created": "Un nouveau Address Allocation a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Address Allocation avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Address Allocation avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Address Allocation {{ id }} ?"
+      },
+      "detail": {
+        "title": "Address Allocation"
+      },
+      "subnet": "Subnet",
+      "deviceName": "Device Name",
+      "deviceMode": "Device Mode",
+      "deviceId": "Device Id",
+      "deviceType": "Device Type",
+      "description": "Description",
+      "allocationType": "Allocation Type",
+      "serialNumber": "Serial Number"
+    }
+  }
+}

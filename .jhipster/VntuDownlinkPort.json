@@ -1,0 +1,61 @@
+{
+  "name": "VntuDownlinkPort",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "uid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "assignedOrgName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "assignedTenantName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "assignedOrgId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "assignedTenantId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "assignedVntuId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "assignedVntuName",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "centralSwitch",
+      "otherEntityRelationshipName": "vntuDownlinkPort",
+      "relationshipName": "centralSwitch",
+      "otherEntityField": "name"
+    }
+  ],
+  "changelogDate": "20210322204545",
+  "entityTableName": "vntu_downlink_port",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

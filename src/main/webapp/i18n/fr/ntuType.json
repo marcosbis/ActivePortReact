@@ -1,0 +1,34 @@
+{
+  "activePortApp": {
+    "ntuType": {
+      "home": {
+        "title": "NtuTypes",
+        "createLabel": "Créer un nouveau Ntu Type",
+        "createOrEditLabel": "Créer ou éditer un Ntu Type",
+        "notFound": "Aucun Ntu Type trouvé"
+      },
+      "created": "Un nouveau Ntu Type a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Ntu Type avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Ntu Type avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Ntu Type {{ id }} ?"
+      },
+      "detail": {
+        "title": "Ntu Type"
+      },
+      "model": "Model",
+      "ethernetPorts": "Ethernet Ports",
+      "sfpPorts": "Sfp Ports",
+      "pictureContentType": "Picture Content Type",
+      "description": "Description",
+      "portServiceType": "Port Service Type",
+      "osType": "Os Type",
+      "etherPrefix": "Ether Prefix",
+      "sfpPrefix": "Sfp Prefix",
+      "startIndex": "Start Index",
+      "portTemplate": "Port Template",
+      "switch": "Switch",
+      "ntu": "Ntu"
+    }
+  }
+}

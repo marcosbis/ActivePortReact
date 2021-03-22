@@ -1,0 +1,34 @@
+{
+  "activePortApp": {
+    "configJob": {
+      "home": {
+        "title": "ConfigJobs",
+        "createLabel": "Créer un nouveau Config Job",
+        "createOrEditLabel": "Créer ou éditer un Config Job",
+        "notFound": "Aucun Config Job trouvé"
+      },
+      "created": "Un nouveau Config Job a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Config Job avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Config Job avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Config Job {{ id }} ?"
+      },
+      "detail": {
+        "title": "Config Job"
+      },
+      "hostId": "Host Id",
+      "status": "Status",
+      "uuid": "Uuid",
+      "message": "Message",
+      "command": "Command",
+      "executed": "Executed",
+      "executedStatus": "Executed Status",
+      "executedMessage": "Executed Message",
+      "ntuId": "Ntu Id",
+      "eventType": "Event Type",
+      "user": "User",
+      "errorMessage": "Error Message",
+      "callbackUrl": "Callback Url"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity Ntu.
+    -->
+    <changeSet id="20210322203845-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="device_configuration_id"
+                                 baseTableName="ntu"
+                                 constraintName="fk_ntu_device_configuration_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="device_configuration"/>
+
+        <addForeignKeyConstraint baseColumnNames="ntutype_id"
+                                 baseTableName="ntu"
+                                 constraintName="fk_ntu_ntutype_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ntu_type"/>
+
+        <addForeignKeyConstraint baseColumnNames="ntutype_id"
+                                 baseTableName="ntu"
+                                 constraintName="fk_ntu_ntutype_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ntu_type"/>
+
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,71 @@
+{
+  "name": "ServiceCode",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "command",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "enabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "serviceUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "hostedType",
+      "fieldType": "HostedTypeEnum",
+      "fieldValues": "CIRCUIT,VLAN"
+    },
+    {
+      "fieldName": "creationType",
+      "fieldType": "CreationTypeEnum",
+      "fieldValues": "CIRCUITVLAN,AUTOGENVLAN"
+    },
+    {
+      "fieldName": "tag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dtoClass",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "providerConfiguration",
+      "otherEntityRelationshipName": "serviceCode",
+      "relationshipName": "providerType",
+      "otherEntityField": "name"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "serviceType",
+      "otherEntityRelationshipName": "serviceCode",
+      "relationshipName": "serviceType",
+      "otherEntityField": "code"
+    }
+  ],
+  "changelogDate": "20210322205945",
+  "entityTableName": "service_code",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

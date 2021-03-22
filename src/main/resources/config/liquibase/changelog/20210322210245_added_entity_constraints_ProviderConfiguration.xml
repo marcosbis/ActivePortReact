@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity ProviderConfiguration.
+    -->
+    <changeSet id="20210322210245-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="provider_configuration_id"
+                                 baseTableName="provider_configuration_services"
+                                 constraintName="fk_provider_configuration_services_provider_configuration_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="provider_configuration"/>
+
+        <addForeignKeyConstraint baseColumnNames="services_id"
+                                 baseTableName="provider_configuration_services"
+                                 constraintName="fk_provider_configuration_services_services_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="service_type"/>
+        
+    </changeSet>
+</databaseChangeLog>

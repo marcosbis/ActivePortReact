@@ -1,0 +1,75 @@
+{
+  "name": "JunoCommandLog",
+  "fields": [
+    {
+      "fieldName": "ntuId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "switchId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "serviceId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "vxcId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "deviceUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "uuid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "command",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cmdResponse",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "executedDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "eventType",
+      "fieldType": "EventTypeEnum",
+      "fieldValues": "FIREWALL_ACTIVATE,FIREWALL_DEACTIVATE,DELETE_SERVICE,CHANGE_PORT,RETAGG_VLAN,PORT_SPEED_CHANGE,SERVICE_CREATE,SERVICE_CREATE_FAILED,MANAGED_FIREWALL_CREATE,MANAGED_FIREWALL_DELETE,MANAGED_FIREWALL_UPDATE,MANAGED_FIREWALL_DECOMMISSION,REQUEST_DECOMMISSION,DISABLE_SERVICE_FROM_NTU,RULE_SET_UPDATE,RULE_SET_CREATE,RULE_SET_DELETE,RULE_SET_REORDER,SERVICE_UPDATE,POOL_UPDATE,POOL_CREATE,POOL_DELETE,ON_COMMIT,SERVICE_AND_PORT_CHANGE,EBGP_FILTERS_UPDATE,STATIC_ROUTE_CREATE,STATIC_ROUTE_UPDATE,STATIC_ROUTE_DELETE,UPDATE_RATE,DEFAULT_POLICY_UPDATE,POLICY_CREATE,POLICY_DELETE,POLICY_UPDATE,APPLICATION_UPDATE,APPLICATION_DELETE,APPLICATION_CREATE,POLICY_REORDER,ZONE_CREATE,ZONE_UPDATE,ZONE_DELETE"
+    },
+    {
+      "fieldName": "user",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deviceName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "targetType",
+      "fieldType": "DeviceTargetTypeEnum",
+      "fieldValues": "NTU,FIREWALL,SWITCH,DEMO"
+    },
+    {
+      "fieldName": "hasErrors",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210322203445",
+  "entityTableName": "juno_command_log",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

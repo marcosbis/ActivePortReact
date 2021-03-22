@@ -1,0 +1,41 @@
+{
+  "name": "Tenant",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tenantId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "disableAccess",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "ilmDays",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "slmDays",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210322202545",
+  "entityTableName": "tenant",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

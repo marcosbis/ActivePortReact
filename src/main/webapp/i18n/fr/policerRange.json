@@ -1,0 +1,28 @@
+{
+  "activePortApp": {
+    "policerRange": {
+      "home": {
+        "title": "PolicerRanges",
+        "createLabel": "Créer un nouveau Policer Range",
+        "createOrEditLabel": "Créer ou éditer un Policer Range",
+        "notFound": "Aucun Policer Range trouvé"
+      },
+      "created": "Un nouveau Policer Range a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Policer Range avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Policer Range avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Policer Range {{ id }} ?"
+      },
+      "detail": {
+        "title": "Policer Range"
+      },
+      "name": "Name",
+      "burst": "Burst",
+      "bandwidth": "Bandwidth",
+      "startPolicer": "Start Policer",
+      "endPolicer": "End Policer",
+      "rangeType": "Range Type",
+      "policerSchedule": "Policer Schedule"
+    }
+  }
+}

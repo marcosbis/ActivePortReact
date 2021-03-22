@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+        <property name="autoIncrement" value="true"/>
+
+    <!--
+        Added the entity UserService.
+    -->
+    <changeSet id="20210322204945-1" author="jhipster">
+        <createTable tableName="user_service">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="description" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="service_key" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="rate_limit" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="price" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="uuid" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="product_uid" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="re_tagged_vlan_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="provisioning_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="vlan_id_a" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="vlan_id_b" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="vlan_id_s" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="ntu_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="user_ip" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="firewall_price" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="firewall_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="state" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="b_end_product_uid" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="partner_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="circuit_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="user_subnet" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="my_gw" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="active_port_gw" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="aws_auth_key" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="aws_ip" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="asn" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="peer_asn" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="vxc_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ntu_port_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <changeSet id="20210322204945-1-relations" author="jhipster">
+
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20210322204945-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/user_service.csv"
+                  separator=";"
+                  tableName="user_service">
+            <column name="id" type="numeric"/>
+            <column name="type" type="string"/>
+            <column name="name" type="string"/>
+            <column name="description" type="string"/>
+            <column name="service_key" type="string"/>
+            <column name="rate_limit" type="numeric"/>
+            <column name="price" type="string"/>
+            <column name="uuid" type="string"/>
+            <column name="product_uid" type="string"/>
+            <column name="re_tagged_vlan_id" type="numeric"/>
+            <column name="provisioning_status" type="string"/>
+            <column name="vlan_id_a" type="numeric"/>
+            <column name="vlan_id_b" type="numeric"/>
+            <column name="vlan_id_s" type="numeric"/>
+            <column name="ntu_id" type="numeric"/>
+            <column name="user_ip" type="string"/>
+            <column name="firewall_price" type="string"/>
+            <column name="firewall_status" type="string"/>
+            <column name="state" type="string"/>
+            <column name="b_end_product_uid" type="string"/>
+            <column name="partner_type" type="string"/>
+            <column name="circuit_type" type="string"/>
+            <column name="user_subnet" type="string"/>
+            <column name="my_gw" type="string"/>
+            <column name="active_port_gw" type="string"/>
+            <column name="aws_auth_key" type="string"/>
+            <column name="aws_ip" type="string"/>
+            <column name="asn" type="numeric"/>
+            <column name="peer_asn" type="numeric"/>
+            <column name="vxc_type" type="string"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+
+</databaseChangeLog>

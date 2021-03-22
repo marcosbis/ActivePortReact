@@ -1,0 +1,11 @@
+{
+  "activePortApp": {
+    "DeviceTargetTypeEnum": {
+      "null": "",
+      "NTU": "NTU",
+      "FIREWALL": "FIREWALL",
+      "SWITCH": "SWITCH",
+      "DEMO": "DEMO"
+    }
+  }
+}

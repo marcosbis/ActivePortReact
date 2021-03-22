@@ -1,0 +1,49 @@
+{
+  "name": "ProviderConfiguration",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "PartnerTypeEnum",
+      "fieldValues": "MEGAPORT,ISP,ZETTA",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "apiType",
+      "fieldType": "ApiTypeEnum",
+      "fieldValues": "NONE,CLIENT"
+    },
+    {
+      "fieldName": "hasPortId",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "serviceType",
+      "otherEntityRelationshipName": "provider",
+      "relationshipName": "services",
+      "otherEntityField": "code",
+      "ownerSide": true
+    }
+  ],
+  "changelogDate": "20210322210245",
+  "entityTableName": "provider_configuration",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

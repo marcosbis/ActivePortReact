@@ -1,0 +1,52 @@
+{
+  "name": "AddressAllocation",
+  "fields": [
+    {
+      "fieldName": "subnet",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deviceName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deviceMode",
+      "fieldType": "NtuModeEnum",
+      "fieldValues": "DEMO,EDGE,CLOUD,MANAGED,BRIDGE,SD_WAN"
+    },
+    {
+      "fieldName": "deviceId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "deviceType",
+      "fieldType": "PortServiceTypeEnum",
+      "fieldValues": "EDGE,SWITCH,FIREWALL,NTU,PE"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "allocationType",
+      "fieldType": "AllocationTypeEnum",
+      "fieldValues": "RESERVED,AUTO"
+    },
+    {
+      "fieldName": "serialNumber",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210322205145",
+  "entityTableName": "address_allocation",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

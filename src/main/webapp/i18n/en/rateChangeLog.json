@@ -1,0 +1,24 @@
+{
+  "activePortApp": {
+    "rateChangeLog": {
+      "home": {
+        "title": "Rate Change Logs",
+        "createLabel": "Create a new Rate Change Log",
+        "createOrEditLabel": "Create or edit a Rate Change Log",
+        "notFound": "No Rate Change Logs found"
+      },
+      "created": "A new Rate Change Log is created with identifier {{ param }}",
+      "updated": "A Rate Change Log is updated with identifier {{ param }}",
+      "deleted": "A Rate Change Log is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Rate Change Log {{ id }}?"
+      },
+      "detail": {
+        "title": "Rate Change Log"
+      },
+      "previuosRate": "Previuos Rate",
+      "rate": "Rate",
+      "userService": "User Service"
+    }
+  }
+}

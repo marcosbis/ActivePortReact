@@ -1,0 +1,30 @@
+{
+  "activePortApp": {
+    "providerLog": {
+      "home": {
+        "title": "ProviderLogs",
+        "createLabel": "Créer un nouveau Provider Log",
+        "createOrEditLabel": "Créer ou éditer un Provider Log",
+        "notFound": "Aucun Provider Log trouvé"
+      },
+      "created": "Un nouveau Provider Log a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Provider Log avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Provider Log avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Provider Log {{ id }} ?"
+      },
+      "detail": {
+        "title": "Provider Log"
+      },
+      "orgId": "Org Id",
+      "tenantId": "Tenant Id",
+      "serviceId": "Service Id",
+      "log": "Log",
+      "type": "Type",
+      "jobUid": "Job Uid",
+      "ntuId": "Ntu Id",
+      "request": "Request",
+      "responseLog": "Response Log"
+    }
+  }
+}

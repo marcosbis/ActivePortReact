@@ -1,0 +1,65 @@
+{
+  "name": "ItemCode",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "codeRate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "codeActivation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "localPriceRate",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "localPriceMontlhy",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "localPriceActivation",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "codeUpLift",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "upLift",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "useUpLift",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "useLocalPrice",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210322203145",
+  "entityTableName": "item_code",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

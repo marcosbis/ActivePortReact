@@ -1,0 +1,24 @@
+{
+  "activePortApp": {
+    "templateConfiguration": {
+      "home": {
+        "title": "TemplateConfigurations",
+        "createLabel": "Créer un nouveau Template Configuration",
+        "createOrEditLabel": "Créer ou éditer un Template Configuration",
+        "notFound": "Aucun Template Configuration trouvé"
+      },
+      "created": "Un nouveau Template Configuration a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Template Configuration avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Template Configuration avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Template Configuration {{ id }} ?"
+      },
+      "detail": {
+        "title": "Template Configuration"
+      },
+      "name": "Name",
+      "description": "Description",
+      "configuration": "Configuration"
+    }
+  }
+}

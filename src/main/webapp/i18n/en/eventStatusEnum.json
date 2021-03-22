@@ -1,0 +1,12 @@
+{
+  "activePortApp": {
+    "EventStatusEnum": {
+      "null": "",
+      "COMPLETED": "COMPLETED",
+      "REQUEST": "REQUEST",
+      "FAILED": "FAILED",
+      "ERROR": "ERROR",
+      "PROGRESSING": "PROGRESSING"
+    }
+  }
+}

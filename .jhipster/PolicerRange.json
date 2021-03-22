@@ -1,0 +1,51 @@
+{
+  "name": "PolicerRange",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "burst",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "bandwidth",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "startPolicer",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "endPolicer",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "rangeType",
+      "fieldType": "RangeTypeEnum",
+      "fieldValues": "EVERYDAY,BETWEEN,WEEKDAYS,WEEKENDS,DAYS,FROM_TO_DAY"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "policerSchedule",
+      "otherEntityRelationshipName": "policerRange",
+      "relationshipName": "policerSchedule",
+      "otherEntityField": "name",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20210322205545",
+  "entityTableName": "policer_range",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

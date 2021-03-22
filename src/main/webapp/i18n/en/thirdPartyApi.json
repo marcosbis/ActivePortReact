@@ -1,0 +1,34 @@
+{
+  "activePortApp": {
+    "thirdPartyApi": {
+      "home": {
+        "title": "Third Party Apis",
+        "createLabel": "Create a new Third Party Api",
+        "createOrEditLabel": "Create or edit a Third Party Api",
+        "notFound": "No Third Party Apis found"
+      },
+      "created": "A new Third Party Api is created with identifier {{ param }}",
+      "updated": "A Third Party Api is updated with identifier {{ param }}",
+      "deleted": "A Third Party Api is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Third Party Api {{ id }}?"
+      },
+      "detail": {
+        "title": "Third Party Api"
+      },
+      "name": "Name",
+      "description": "Description",
+      "api": "Api",
+      "stage": "Stage",
+      "username": "Username",
+      "secret": "Secret",
+      "privateKeyCert": "Private Key Cert",
+      "privateKeyPassword": "Private Key Password",
+      "billingUid": "Billing Uid",
+      "productUid": "Product Uid",
+      "endpoint": "Endpoint",
+      "allowSharedPortsUid": "Allow Shared Ports Uid",
+      "connectionType": "Connection Type"
+    }
+  }
+}

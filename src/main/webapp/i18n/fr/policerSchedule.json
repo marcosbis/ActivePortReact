@@ -1,0 +1,26 @@
+{
+  "activePortApp": {
+    "policerSchedule": {
+      "home": {
+        "title": "PolicerSchedules",
+        "createLabel": "Créer un nouveau Policer Schedule",
+        "createOrEditLabel": "Créer ou éditer un Policer Schedule",
+        "notFound": "Aucun Policer Schedule trouvé"
+      },
+      "created": "Un nouveau Policer Schedule a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Policer Schedule avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Policer Schedule avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Policer Schedule {{ id }} ?"
+      },
+      "detail": {
+        "title": "Policer Schedule"
+      },
+      "name": "Name",
+      "description": "Description",
+      "days": "Days",
+      "ntu": "Ntu",
+      "policerRange": "Policer Range"
+    }
+  }
+}

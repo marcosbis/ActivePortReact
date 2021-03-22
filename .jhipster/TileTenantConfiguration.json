@@ -1,0 +1,33 @@
+{
+  "name": "TileTenantConfiguration",
+  "fields": [
+    {
+      "fieldName": "tenantId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orgId",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "tileConfiguration",
+      "otherEntityRelationshipName": "tileTenantConfiguration",
+      "relationshipName": "tileConfiguration",
+      "otherEntityField": "name"
+    }
+  ],
+  "changelogDate": "20210322210345",
+  "entityTableName": "tile_tenant_configuration",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

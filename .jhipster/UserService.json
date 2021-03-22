@@ -1,0 +1,148 @@
+{
+  "name": "UserService",
+  "fields": [
+    {
+      "fieldName": "type",
+      "fieldType": "ConnectTypeEnum",
+      "fieldValues": "AWS,IX,VXC,AZURE,AZURE_PRIVATE,AZURE_PUBLIC,AZURE_MICROSOFT,OFFICE,INTERNET,ZETTA_INTERNET,DNS_FILTER,ZETTA_SERVICE,INTERNET_LAYER3,MCON,ALIBABA,IBM,GOOGLE,ORACLE,XC"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "serviceKey",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rateLimit",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "uuid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productUid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "reTaggedVlanId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "provisioningStatus",
+      "fieldType": "ProvisioningStatusEnum",
+      "fieldValues": "NEW,DESIGN,IN_PROGRESS,ON_HOLD,DEPLOYABLE,CONFIGURED,LIVE,CANCELLED,CANCELLED_PARENT,SLEEP,FAILED,DECOMMISSIONED,DISABLED,PRE_APPROVED,APPROVED"
+    },
+    {
+      "fieldName": "vlanIdA",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "vlanIdB",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "vlanIdS",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "ntuId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "userIp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "firewallPrice",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "firewallStatus",
+      "fieldType": "FirewallStatusEnum",
+      "fieldValues": "DESIGN,IN_PROGRESS,ENABLED,SLEEP,FAILED,DISABLED"
+    },
+    {
+      "fieldName": "state",
+      "fieldType": "ServiceStateEnum",
+      "fieldValues": "DESIGN,ACTIVE,ON_HOLD,DISABLED"
+    },
+    {
+      "fieldName": "bEndProductUid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "partnerType",
+      "fieldType": "PartnerTypeEnum",
+      "fieldValues": "MEGAPORT,ISP,ZETTA"
+    },
+    {
+      "fieldName": "circuitType",
+      "fieldType": "CircuitTypeEnum",
+      "fieldValues": "VLAN,CIRCUIT,ROUTING_ROUTE,ROUTING_NAT"
+    },
+    {
+      "fieldName": "userSubnet",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "myGw",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "activePortGw",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "awsAuthKey",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "awsIp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "asn",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "peerAsn",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "vxcType",
+      "fieldType": "VXCTypeEnum",
+      "fieldValues": "PRIMARY,SECONDARY"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "ntuPort",
+      "otherEntityRelationshipName": "userServices",
+      "relationshipName": "ntuPort",
+      "otherEntityField": "name"
+    }
+  ],
+  "changelogDate": "20210322204945",
+  "entityTableName": "user_service",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

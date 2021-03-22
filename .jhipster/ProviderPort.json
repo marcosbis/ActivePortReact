@@ -1,0 +1,68 @@
+{
+  "name": "ProviderPort",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMinlength": "3",
+      "fieldValidateRulesMaxlength": "30"
+    },
+    {
+      "fieldName": "uid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "PartnerTypeEnum",
+      "fieldValues": "MEGAPORT,ISP,ZETTA",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "connection",
+      "fieldType": "ConnetionTypeEnum",
+      "fieldValues": "LAYER2,LAYER3"
+    },
+    {
+      "fieldName": "portType",
+      "fieldType": "AwsTypeEnum",
+      "fieldValues": "PUBLIC,PRIVATE"
+    },
+    {
+      "fieldName": "portId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "market",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "locationId",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "thirdPartyApi",
+      "otherEntityRelationshipName": "providerPort",
+      "relationshipName": "thirdPartyApi",
+      "otherEntityField": "name"
+    }
+  ],
+  "changelogDate": "20210322204745",
+  "entityTableName": "provider_port",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

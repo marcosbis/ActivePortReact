@@ -1,0 +1,73 @@
+{
+  "name": "ServiceCommand",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "command",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "onEvent",
+      "fieldType": "OnEventTypeEnum",
+      "fieldValues": "BEFORE_CREATE_SERVICE,CREATE_SERVICE,DISABLE_SERVICE_FROM_NTU,DELETE_SERVICE,UPDATE_SERVICE"
+    },
+    {
+      "fieldName": "onService",
+      "fieldType": "ServiceTypeEnum",
+      "fieldValues": "ANY,AWS,IX,VXC,AZURE,AZURE_PRIVATE,AZURE_PUBLIC,AZURE_MICROSOFT,OFFICE,INTERNET,ZETTA_INTERNET,DNS_FILTER,ZETTA_SERVICE,INTERNET_LAYER3,MCON,ALIBABA,IBM,GOOGLE,ORACLE,XC"
+    },
+    {
+      "fieldName": "deviceType",
+      "fieldType": "NtuSerieEnum",
+      "fieldValues": "NTU,PE"
+    },
+    {
+      "fieldName": "enabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "circuitType",
+      "fieldType": "FilterCommandTypeEnum",
+      "fieldValues": "CIRCUIT,ROUTING_ROUTE,ROUTING_NAT,ANY,POLICER"
+    },
+    {
+      "fieldName": "tag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "osType",
+      "fieldType": "OsTypeEnum",
+      "fieldValues": "JUNOS,MIKROTIK"
+    },
+    {
+      "fieldName": "entryType",
+      "fieldType": "EntityTypeEnum",
+      "fieldValues": "SYSTEM,SETTING"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "serviceConfiguration",
+      "otherEntityRelationshipName": "commands",
+      "relationshipName": "serviceConfiguration",
+      "otherEntityField": "name",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20210322203745",
+  "entityTableName": "service_command",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

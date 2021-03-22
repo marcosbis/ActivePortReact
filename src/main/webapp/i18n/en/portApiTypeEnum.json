@@ -1,0 +1,9 @@
+{
+  "activePortApp": {
+    "PortApiTypeEnum": {
+      "null": "",
+      "SHARED": "SHARED",
+      "PRIVATE": "PRIVATE"
+    }
+  }
+}

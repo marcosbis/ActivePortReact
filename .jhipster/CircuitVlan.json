@@ -1,0 +1,71 @@
+{
+  "name": "CircuitVlan",
+  "fields": [
+    {
+      "fieldName": "zone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "serviceKey",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vlanId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "rd",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "serviceId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "tenantName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "childServiceId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "childNtuId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "realmIp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "internetType",
+      "fieldType": "InternetTypeEnum",
+      "fieldValues": "LAYER2,STATIC_ADDRESS,PPPOE,DHCP,BGP,XC,VXC"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "ConnectTypeEnum",
+      "fieldValues": "AWS,IX,VXC,AZURE,AZURE_PRIVATE,AZURE_PUBLIC,AZURE_MICROSOFT,OFFICE,INTERNET,ZETTA_INTERNET,DNS_FILTER,ZETTA_SERVICE,INTERNET_LAYER3,MCON,ALIBABA,IBM,GOOGLE,ORACLE,XC"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "serviceConfiguration",
+      "otherEntityRelationshipName": "circuitVlan",
+      "relationshipName": "serviceConfiguration",
+      "otherEntityField": "name"
+    }
+  ],
+  "changelogDate": "20210322203345",
+  "entityTableName": "circuit_vlan",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

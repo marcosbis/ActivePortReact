@@ -1,0 +1,65 @@
+{
+  "name": "RealmIp",
+  "fields": [
+    {
+      "fieldName": "subnet",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "desciption",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mask",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "subnetSize",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "firstIp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastIp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "broadcast",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cir",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ipsecGateway",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "location",
+      "otherEntityRelationshipName": "realmIp",
+      "relationshipName": "location",
+      "otherEntityField": "code"
+    }
+  ],
+  "changelogDate": "20210322205045",
+  "entityTableName": "realm_ip",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

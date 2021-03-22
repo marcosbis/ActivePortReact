@@ -1,0 +1,35 @@
+{
+  "activePortApp": {
+    "junoCommandLog": {
+      "home": {
+        "title": "Juno Command Logs",
+        "createLabel": "Create a new Juno Command Log",
+        "createOrEditLabel": "Create or edit a Juno Command Log",
+        "notFound": "No Juno Command Logs found"
+      },
+      "created": "A new Juno Command Log is created with identifier {{ param }}",
+      "updated": "A Juno Command Log is updated with identifier {{ param }}",
+      "deleted": "A Juno Command Log is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Juno Command Log {{ id }}?"
+      },
+      "detail": {
+        "title": "Juno Command Log"
+      },
+      "ntuId": "Ntu Id",
+      "switchId": "Switch Id",
+      "serviceId": "Service Id",
+      "vxcId": "Vxc Id",
+      "deviceUrl": "Device Url",
+      "uuid": "Uuid",
+      "command": "Command",
+      "cmdResponse": "Cmd Response",
+      "executedDate": "Executed Date",
+      "eventType": "Event Type",
+      "user": "User",
+      "deviceName": "Device Name",
+      "targetType": "Target Type",
+      "hasErrors": "Has Errors"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "activePortApp": {
+    "realmIp": {
+      "home": {
+        "title": "Realm Ips",
+        "createLabel": "Create a new Realm Ip",
+        "createOrEditLabel": "Create or edit a Realm Ip",
+        "notFound": "No Realm Ips found"
+      },
+      "created": "A new Realm Ip is created with identifier {{ param }}",
+      "updated": "A Realm Ip is updated with identifier {{ param }}",
+      "deleted": "A Realm Ip is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Realm Ip {{ id }}?"
+      },
+      "detail": {
+        "title": "Realm Ip"
+      },
+      "subnet": "Subnet",
+      "name": "Name",
+      "desciption": "Desciption",
+      "mask": "Mask",
+      "subnetSize": "Subnet Size",
+      "firstIp": "First Ip",
+      "lastIp": "Last Ip",
+      "broadcast": "Broadcast",
+      "cir": "Cir",
+      "ipsecGateway": "Ipsec Gateway",
+      "location": "Location"
+    }
+  }
+}

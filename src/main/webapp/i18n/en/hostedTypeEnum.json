@@ -1,0 +1,9 @@
+{
+  "activePortApp": {
+    "HostedTypeEnum": {
+      "null": "",
+      "CIRCUIT": "CIRCUIT",
+      "VLAN": "VLAN"
+    }
+  }
+}

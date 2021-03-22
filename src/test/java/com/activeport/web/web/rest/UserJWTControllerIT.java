@@ -9,7 +9,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.activeport.web.ActivePortReactApp;
+import com.activeport.web.ActivePortApp;
 import com.activeport.web.domain.User;
 import com.activeport.web.repository.UserRepository;
 import com.activeport.web.web.rest.vm.LoginVM;
@@ -27,7 +27,7 @@ import org.springframework.transaction.annotation.Transactional;
  * Integration tests for the {@link UserJWTController} REST controller.
  */
 @AutoConfigureMockMvc
-@SpringBootTest(classes = ActivePortReactApp.class)
+@SpringBootTest(classes = ActivePortApp.class)
 public class UserJWTControllerIT {
     @Autowired
     private UserRepository userRepository;

@@ -1,0 +1,72 @@
+{
+  "name": "NotificationEvent",
+  "fields": [
+    {
+      "fieldName": "ntuName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ntuId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "EventStatusEnum",
+      "fieldValues": "COMPLETED,REQUEST,FAILED,ERROR,PROGRESSING"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "EventTypeEnum",
+      "fieldValues": "FIREWALL_ACTIVATE,FIREWALL_DEACTIVATE,DELETE_SERVICE,CHANGE_PORT,RETAGG_VLAN,PORT_SPEED_CHANGE,SERVICE_CREATE,SERVICE_CREATE_FAILED,MANAGED_FIREWALL_CREATE,MANAGED_FIREWALL_DELETE,MANAGED_FIREWALL_UPDATE,MANAGED_FIREWALL_DECOMMISSION,REQUEST_DECOMMISSION,DISABLE_SERVICE_FROM_NTU,RULE_SET_UPDATE,RULE_SET_CREATE,RULE_SET_DELETE,RULE_SET_REORDER,SERVICE_UPDATE,POOL_UPDATE,POOL_CREATE,POOL_DELETE,ON_COMMIT,SERVICE_AND_PORT_CHANGE,EBGP_FILTERS_UPDATE,STATIC_ROUTE_CREATE,STATIC_ROUTE_UPDATE,STATIC_ROUTE_DELETE,UPDATE_RATE,DEFAULT_POLICY_UPDATE,POLICY_CREATE,POLICY_DELETE,POLICY_UPDATE,APPLICATION_UPDATE,APPLICATION_DELETE,APPLICATION_CREATE,POLICY_REORDER,ZONE_CREATE,ZONE_UPDATE,ZONE_DELETE"
+    },
+    {
+      "fieldName": "message",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "serviceName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "serviceId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "vxcId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "uuid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "user",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "errorMessage",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "configJob",
+      "otherEntityRelationshipName": "notificationEvent",
+      "relationshipName": "job",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210322203645",
+  "entityTableName": "notification_event",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

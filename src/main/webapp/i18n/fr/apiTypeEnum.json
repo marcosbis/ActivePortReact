@@ -1,0 +1,9 @@
+{
+  "activePortApp": {
+    "ApiTypeEnum": {
+      "null": "",
+      "NONE": "NONE",
+      "CLIENT": "CLIENT"
+    }
+  }
+}

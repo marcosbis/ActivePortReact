@@ -1,0 +1,87 @@
+{
+  "name": "Partner",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMinlength": "3",
+      "fieldValidateRulesMaxlength": "30"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "PartnerTypeEnum",
+      "fieldValues": "MEGAPORT,ISP,ZETTA",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "connection",
+      "fieldType": "ConnetionTypeEnum",
+      "fieldValues": "LAYER2,LAYER3"
+    },
+    {
+      "fieldName": "portType",
+      "fieldType": "AwsTypeEnum",
+      "fieldValues": "PUBLIC,PRIVATE"
+    },
+    {
+      "fieldName": "port",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "market",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "locationId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "vxcpermitted",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "locationIx",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vlanPort",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "centralSwitch",
+      "otherEntityRelationshipName": "partner",
+      "relationshipName": "centralSwitch",
+      "otherEntityField": "name"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "providerConfiguration",
+      "otherEntityRelationshipName": "partner",
+      "relationshipName": "providerCode",
+      "otherEntityField": "name"
+    }
+  ],
+  "changelogDate": "20210322204645",
+  "entityTableName": "partner",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

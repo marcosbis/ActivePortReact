@@ -1,0 +1,15 @@
+export const enum InternetTypeEnum {
+  LAYER2 = 'LAYER2',
+
+  STATIC_ADDRESS = 'STATIC_ADDRESS',
+
+  PPPOE = 'PPPOE',
+
+  DHCP = 'DHCP',
+
+  BGP = 'BGP',
+
+  XC = 'XC',
+
+  VXC = 'VXC',
+}

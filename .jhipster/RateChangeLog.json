@@ -1,0 +1,33 @@
+{
+  "name": "RateChangeLog",
+  "fields": [
+    {
+      "fieldName": "previuosRate",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "rate",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "userService",
+      "otherEntityRelationshipName": "rateChangeLog",
+      "relationshipName": "userService",
+      "otherEntityField": "name"
+    }
+  ],
+  "changelogDate": "20210322204445",
+  "entityTableName": "rate_change_log",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

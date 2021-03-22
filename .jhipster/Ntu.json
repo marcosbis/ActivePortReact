@@ -1,0 +1,182 @@
+{
+  "name": "Ntu",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "hostId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "serialNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ipAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "companyName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "hostName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "loIp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "category",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alarmEmailAddresses",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "metricCollection",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "securityCollection",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "alarmCollection",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "trendCollection",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "syslogCollection",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "configBackup",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "updateOneconfig",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "firmwareVersion",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "runningConfig",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "configId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "endpoint",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "restUsername",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "restPassword",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "restEnabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "autoRollback",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "mode",
+      "fieldType": "NtuModeEnum",
+      "fieldValues": "DEMO,EDGE,CLOUD,MANAGED,BRIDGE,SD_WAN"
+    },
+    {
+      "fieldName": "timeZone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "minRate",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "maxRate",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "defaultRate",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "enableBod",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "burstTime",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMin": "5",
+      "fieldValidateRulesMax": "1000"
+    },
+    {
+      "fieldName": "secondlinkPort",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "deviceConfiguration",
+      "otherEntityRelationshipName": "ntu",
+      "relationshipName": "deviceConfiguration",
+      "otherEntityField": "serialNumber",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "ntuPort",
+      "otherEntityRelationshipName": "ntu",
+      "relationshipName": "port"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "ntuType",
+      "otherEntityRelationshipName": "ntu",
+      "relationshipName": "ntutype",
+      "otherEntityField": "model"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "ntuType",
+      "otherEntityRelationshipName": "ntu",
+      "relationshipName": "ntutype",
+      "otherEntityField": "model"
+    }
+  ],
+  "changelogDate": "20210322203845",
+  "entityTableName": "ntu",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ActivePort"]
+}

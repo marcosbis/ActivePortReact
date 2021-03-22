@@ -1,0 +1,11 @@
+{
+  "activePortApp": {
+    "AddressSetupTypeEnum": {
+      "null": "",
+      "FIRST": "FIRST",
+      "LAST": "LAST",
+      "RANDOM": "RANDOM",
+      "MANUAL": "MANUAL"
+    }
+  }
+}

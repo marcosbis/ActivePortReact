@@ -11,9 +11,6 @@ const adminMenuItems = (
     <MenuItem icon="user" to="/admin/user-management">
       <Translate contentKey="global.menu.admin.userManagement">User management</Translate>
     </MenuItem>
-    <MenuItem icon="eye" to="/admin/tracker">
-      <Translate contentKey="global.menu.admin.tracker">User tracker</Translate>
-    </MenuItem>
     <MenuItem icon="tachometer-alt" to="/admin/metrics">
       <Translate contentKey="global.menu.admin.metrics">Metrics</Translate>
     </MenuItem>
@@ -39,10 +36,18 @@ const swaggerItem = (
   </MenuItem>
 );
 
-export const AdminMenu = ({ showSwagger }) => (
+const databaseItem = (
+  <DropdownItem tag="a" href="./h2-console" target="_tab">
+    <FontAwesomeIcon icon="hdd" fixedWidth /> <Translate contentKey="global.menu.admin.database">Database</Translate>
+  </DropdownItem>
+);
+
+export const AdminMenu = ({ showSwagger, showDatabase }) => (
   <NavDropdown icon="user-plus" name={translate('global.menu.admin.main')} style={{ width: '140%' }} id="admin-menu">
     {adminMenuItems}
     {showSwagger && swaggerItem}
+
+    {showDatabase && databaseItem}
   </NavDropdown>
 );
 

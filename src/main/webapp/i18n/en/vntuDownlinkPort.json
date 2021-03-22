@@ -1,0 +1,31 @@
+{
+  "activePortApp": {
+    "vntuDownlinkPort": {
+      "home": {
+        "title": "Vntu Downlink Ports",
+        "createLabel": "Create a new Vntu Downlink Port",
+        "createOrEditLabel": "Create or edit a Vntu Downlink Port",
+        "notFound": "No Vntu Downlink Ports found"
+      },
+      "created": "A new Vntu Downlink Port is created with identifier {{ param }}",
+      "updated": "A Vntu Downlink Port is updated with identifier {{ param }}",
+      "deleted": "A Vntu Downlink Port is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Vntu Downlink Port {{ id }}?"
+      },
+      "detail": {
+        "title": "Vntu Downlink Port"
+      },
+      "name": "Name",
+      "uid": "Uid",
+      "description": "Description",
+      "assignedOrgName": "Assigned Org Name",
+      "assignedTenantName": "Assigned Tenant Name",
+      "assignedOrgId": "Assigned Org Id",
+      "assignedTenantId": "Assigned Tenant Id",
+      "assignedVntuId": "Assigned Vntu Id",
+      "assignedVntuName": "Assigned Vntu Name",
+      "centralSwitch": "Central Switch"
+    }
+  }
+}

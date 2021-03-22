@@ -1,0 +1,10 @@
+{
+  "activePortApp": {
+    "PartnerTypeEnum": {
+      "null": "",
+      "MEGAPORT": "MEGAPORT",
+      "ISP": "ISP",
+      "ZETTA": "ZETTA"
+    }
+  }
+}

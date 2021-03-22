@@ -1,0 +1,32 @@
+{
+  "activePortApp": {
+    "billingSystem": {
+      "home": {
+        "title": "BillingSystems",
+        "createLabel": "Créer un nouveau Billing System",
+        "createOrEditLabel": "Créer ou éditer un Billing System",
+        "notFound": "Aucun Billing System trouvé"
+      },
+      "created": "Un nouveau Billing System a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Billing System avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Billing System avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Billing System {{ id }} ?"
+      },
+      "detail": {
+        "title": "Billing System"
+      },
+      "name": "Name",
+      "description": "Description",
+      "api": "Api",
+      "stage": "Stage",
+      "username": "Username",
+      "secret": "Secret",
+      "privateKeyCert": "Private Key Cert",
+      "privateKeyPassword": "Private Key Password",
+      "billingUid": "Billing Uid",
+      "startBilling": "Start Billing",
+      "currencyCode": "Currency Code"
+    }
+  }
+}
